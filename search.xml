@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[python3安装]]></title>
+    <url>%2F2018%2F12%2F09%2Fpython3%E5%AE%89%E8%A3%85%2F</url>
+    <content type="text"><![CDATA[Linux 查看版本： python --verison python3 --version ubuntu安装：使用deadsnakes，它让安装多个版本更容易 sudo add-apt-repository ppa:fkrull/deadsnakes sudo apt-get update sudo apt-get install python3.6 centos安装：yum不支持，需要下载源码安装 #安装依赖 yum -y groupinstall "Development tools" yum -y install zlib-devel openssl-devel #一个比较重要的包（不装的话，python3.7安装会报错） yum install libffi-devel -y #下载 wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz #解压安装 tar -xvJf Python-3.7.1.tar.xz cd Python-3.6.6 ./configure --prefix=/usr/local/bin/python3 sudo make sudo make install #创建软链接 sudo ln -s /usr/local/bin/python3/bin/python3 /usr/bin/python3 sudo ln -s /usr/local/bin/python3/bin/pip3 /usr/bin/pip3 OS X 查看版本： python --verison python3 --version 安装安装Homebrew,brew依赖于Xcode #一般都自带 xcode-select --install #安装homebrew /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" #检查homebrew brew doctor #安装python brew install python3 homebrew用法 搜索软件：brew search 软件名，如brew search wget 安装软件：brew install 软件名，如brew install wget 卸载软件：brew remove 软件名，如brew remove wget brew list 列出已安装的软件 brew update 更新brew brew home 用浏览器打开brew的官方网站 brew info 显示软件信息 brew deps 显示包依赖 brew -v brew -h Windows 检查版本： CMD下： python --version or 直接python尝试进入 安装： #官网下载，安装时选择Add Python to PATH http://python.org/downloads/]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+</search>
