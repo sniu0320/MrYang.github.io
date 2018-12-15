@@ -319,7 +319,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/python/python-script-处理日志文件/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/linux/部署/CentOS7部署Nginx/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Yang">
@@ -338,7 +338,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/python/python-script-处理日志文件/" itemprop="url">python-script:处理日志文件</a></h1>
+                <a class="post-title-link" href="/linux/部署/CentOS7部署Nginx/" itemprop="url">CentOS7部署Nginx</a></h1>
         
 
         <div class="post-meta">
@@ -350,8 +350,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-14T20:13:40+08:00">
-                2018-12-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-15T20:14:58+08:00">
+                2018-12-15
               </time>
             
 
@@ -366,8 +366,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-14T20:15:01+08:00">
-                2018-12-14
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-15T20:46:19+08:00">
+                2018-12-15
               </time>
             
           </span>
@@ -385,8 +385,19 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index">
-                    <span itemprop="name">python</span>
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/部署/" itemprop="url" rel="index">
+                    <span itemprop="name">部署</span>
                   </a>
                 </span>
 
@@ -424,7 +435,175 @@
       
         
           
-            <h1 id="从操作日志中提取命令行信息"><a href="#从操作日志中提取命令行信息" class="headerlink" title="从操作日志中提取命令行信息"></a>从操作日志中提取命令行信息</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">解析操作日志，提取时间信息和命令行</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">input_any_exit</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        input(<span class="string">"\r\nEnter any key to exit... "</span>)</span><br><span class="line">    <span class="keyword">finally</span>:</span><br><span class="line">        sys.exit(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">check_file</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;请将操作日志重命名为cmd.log放在当前目录下"</span>)</span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        input(<span class="string">"Enter any key to continue... "</span>)</span><br><span class="line">        file =<span class="string">"cmd.log"</span></span><br><span class="line">        <span class="keyword">if</span> os.path.isfile(file):</span><br><span class="line">            <span class="keyword">return</span> file</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(<span class="string">"&gt;&gt;&gt;Error: 当前目录下未找到%s文件!"</span>%(file))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_file</span><span class="params">(file)</span>:</span></span><br><span class="line">    f =open(file,<span class="string">"r"</span>)</span><br><span class="line">    log =f.read()</span><br><span class="line">    log_list =log.split(<span class="string">'StartTime'</span>)</span><br><span class="line">    list = []</span><br><span class="line">    <span class="keyword">for</span> cmd <span class="keyword">in</span> log_list:</span><br><span class="line">        <span class="comment">#cmd = 'StartTime' + i</span></span><br><span class="line">        re_list=[<span class="string">r'\r\n'</span>,<span class="string">r'\r'</span>,<span class="string">r'\n'</span>]</span><br><span class="line">        <span class="keyword">for</span> r <span class="keyword">in</span> re_list:</span><br><span class="line">            cmd = re.sub(r,<span class="string">""</span>,cmd)</span><br><span class="line">        cmd = cmd + <span class="string">"\n"</span>  <span class="comment"># 在结尾加换行符</span></span><br><span class="line">        <span class="comment">#print(cmd)</span></span><br><span class="line">        list.append(cmd)</span><br><span class="line">    f.close()</span><br><span class="line">    <span class="keyword">return</span> list</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">which_run</span><span class="params">(file)</span>:</span></span><br><span class="line">    print(<span class="string">"a:提取时间戳和命令行"</span>)</span><br><span class="line">    print(<span class="string">"b:提取命令行"</span>)</span><br><span class="line">    num = input(<span class="string">"which one(a/b):"</span>).lower()</span><br><span class="line">    <span class="keyword">if</span> num == <span class="string">'a'</span>:</span><br><span class="line">        run_time(get_file(file),file)</span><br><span class="line">    <span class="keyword">elif</span> num == <span class="string">'b'</span>:</span><br><span class="line">        run_cmd(get_file(file),file)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        which_run(file)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">delete_login</span><span class="params">(list)</span>:</span></span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        yes_or_no = input(<span class="string">"是否清除'/--- * ----/'信息[y/n]:"</span>).lower()</span><br><span class="line">        <span class="keyword">if</span> yes_or_no == <span class="string">'y'</span>:</span><br><span class="line">            list_new=[]</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> list:</span><br><span class="line">                <span class="keyword">if</span> i.find(<span class="string">"/---"</span>) == <span class="number">-1</span>:</span><br><span class="line">                    list_new.append(i)</span><br><span class="line">            <span class="keyword">return</span> list_new</span><br><span class="line">        <span class="keyword">elif</span> yes_or_no == <span class="string">'n'</span>:</span><br><span class="line">            <span class="keyword">return</span> list</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">delete_show</span><span class="params">(list)</span>:</span></span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        yes_or_no=input(<span class="string">"是否清除show命令[y/n]:"</span>).lower()</span><br><span class="line">        <span class="keyword">if</span> yes_or_no == <span class="string">'y'</span>:</span><br><span class="line">            list_new=[]</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> list:</span><br><span class="line">                <span class="keyword">if</span> i.find(<span class="string">"show"</span>) == <span class="number">-1</span>:</span><br><span class="line">                    list_new.append(i)</span><br><span class="line">            <span class="keyword">return</span> list_new</span><br><span class="line">        <span class="keyword">elif</span> yes_or_no == <span class="string">'n'</span>:</span><br><span class="line">            <span class="keyword">return</span> list</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">run_cmd</span><span class="params">(list,file)</span>:</span></span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;提取命令行"</span>)</span><br><span class="line">    list_new =delete_login(list)</span><br><span class="line">    list_new =delete_show(list_new)</span><br><span class="line">    time_now = time.strftime(<span class="string">"%Y-%m-%d_%H-%M"</span>, time.localtime())</span><br><span class="line">    filename=file.split(<span class="string">"."</span>)[<span class="number">0</span>]+<span class="string">"_cmd_&#123;&#125;.log"</span>.format(time_now)</span><br><span class="line">    f = open(filename, <span class="string">"w"</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> list_new:</span><br><span class="line">        cmd =i.split(<span class="string">'CMDLine: '</span>)[<span class="number">-1</span>]</span><br><span class="line">        f.write(cmd)</span><br><span class="line">    f.close()</span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;执行完毕，输出%s"</span>%(filename))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">run_time</span><span class="params">(list,file)</span>:</span></span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;提取时间戳和命令行"</span>)</span><br><span class="line">    list_new = delete_login(list)</span><br><span class="line">    list_new = delete_show(list_new)</span><br><span class="line">    time_now = time.strftime(<span class="string">"%Y-%m-%d_%H-%M"</span>, time.localtime())</span><br><span class="line">    filename=file.split(<span class="string">"."</span>)[<span class="number">0</span>]+<span class="string">"_time_&#123;&#125;.log"</span>.format(time_now)</span><br><span class="line">    f = open(filename, <span class="string">"w"</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> list_new:</span><br><span class="line">        mat = re.findall(<span class="string">r"(\d&#123;1,2&#125;:\d&#123;1,2&#125;:\d&#123;1,2&#125;\s\d&#123;1,2&#125;-\d&#123;1,2&#125;-\d&#123;4&#125;)"</span>, i)</span><br><span class="line">        cmd1 =<span class="string">" "</span>.join(mat)</span><br><span class="line">        <span class="comment">#cmd1 =i.split('FlowID:')[0]</span></span><br><span class="line">        cmd2 =i.split(<span class="string">'CMDLine: '</span>)[<span class="number">-1</span>]</span><br><span class="line">        cmd =cmd1+<span class="string">" "</span>+cmd2</span><br><span class="line">        f.write(cmd)</span><br><span class="line">    f.close()</span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;执行完毕，输出%s"</span>%(filename))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    print(<span class="string">"******** Welcome to use this tool! ********"</span>)</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        which_run(check_file())</span><br><span class="line">    <span class="keyword">except</span> (Exception) <span class="keyword">as</span> e:</span><br><span class="line">        print(e)</span><br><span class="line">    <span class="keyword">finally</span>:</span><br><span class="line">        input_any_exit()</span><br></pre></td></tr></table></figure>
+            <h1 id="1-安装依赖包"><a href="#1-安装依赖包" class="headerlink" title="1.安装依赖包"></a>1.安装依赖包</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum install openssl <span class="comment">#安装openssl库</span></span><br><span class="line">yum install zlib <span class="comment">#安装zlib库</span></span><br><span class="line">yum install pcre <span class="comment">#安装pcre库</span></span><br></pre></td></tr></table></figure>
+<h1 id="2-安装Nginx依赖项和Nginx"><a href="#2-安装Nginx依赖项和Nginx" class="headerlink" title="2.安装Nginx依赖项和Nginx"></a>2.安装Nginx依赖项和Nginx</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -Uvh http://nginx.org/packages/centos/<span class="number">7</span>/noarch/RPMS/nginx-release-centos<span class="number">-7</span><span class="number">-0.</span>el7.ngx.noarch.rpm </span><br><span class="line">yum install nginx</span><br></pre></td></tr></table></figure>
+<h1 id="3-启动Nginx"><a href="#3-启动Nginx" class="headerlink" title="3.启动Nginx"></a>3.启动Nginx</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">service nginx start <span class="comment">#启动Nginx</span></span><br><span class="line">service nginx restart <span class="comment">#重启Nginx</span></span><br></pre></td></tr></table></figure>
+<h1 id="4-配置开机启动"><a href="#4-配置开机启动" class="headerlink" title="4.配置开机启动"></a>4.配置开机启动</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chmod +x /etc/rc.d/rc.local</span><br><span class="line">vim /etc/rc.d/rc.local</span><br><span class="line">添加 service nginx start</span><br></pre></td></tr></table></figure>
+<h1 id="5-配置config"><a href="#5-配置config" class="headerlink" title="5.配置config"></a>5.配置config</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/nginx/conf.d/default.conf</span><br><span class="line"> </span><br><span class="line">server &#123;</span><br><span class="line">    listen       <span class="number">80</span>;</span><br><span class="line">    server_name  <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>;</span><br><span class="line">    root /root/web/blog; <span class="comment">#nginx的根目录默认/usr/share/nginx/html/下，修改访问目录</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#charset koi8-r;</span></span><br><span class="line">    <span class="comment">#access_log  /var/log/nginx/host.access.log  main;</span></span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        root   /root/web/blog; <span class="comment">#修改访问目录</span></span><br><span class="line">        index  index.html index.htm;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">#error_page  404              /404.html;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># redirect server error pages to the static page /50x.html</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    error_page   <span class="number">500</span> <span class="number">502</span> <span class="number">503</span> <span class="number">504</span>  /<span class="number">50</span>x.html;</span><br><span class="line">    location = /<span class="number">50</span>x.html &#123;</span><br><span class="line">        root   /root/web/blog; <span class="comment">#修改访问目录</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># proxy the PHP scripts to Apache listening on 127.0.0.1:80</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment">#location ~ \.php$ &#123;</span></span><br><span class="line">    <span class="comment">#    proxy_pass   http://127.0.0.1;</span></span><br><span class="line">    <span class="comment">#&#125;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment">#location ~ \.php$ &#123;</span></span><br><span class="line">    <span class="comment">#    root           html;</span></span><br><span class="line">    <span class="comment">#    fastcgi_pass   127.0.0.1:9000;</span></span><br><span class="line">    <span class="comment">#    fastcgi_index  index.php;</span></span><br><span class="line">    <span class="comment">#    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span></span><br><span class="line">    <span class="comment">#    include        fastcgi_params;</span></span><br><span class="line">    <span class="comment">#&#125;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># deny access to .htaccess files, if Apache's document root</span></span><br><span class="line">    <span class="comment"># concurs with nginx's one</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment">#location ~ /\.ht &#123;</span></span><br><span class="line">    <span class="comment">#    deny  all;</span></span><br><span class="line">    <span class="comment">#&#125;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/python/script/python-script-处理日志文件/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mr.Yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mr.Yang's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/python/script/python-script-处理日志文件/" itemprop="url">python-script:处理日志文件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-14T20:13:40+08:00">
+                2018-12-14
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-15T20:17:05+08:00">
+                2018-12-15
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/script/" itemprop="url" rel="index">
+                    <span itemprop="name">script</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="从操作日志中提取命令行信息"><a href="#从操作日志中提取命令行信息" class="headerlink" title="从操作日志中提取命令行信息"></a>从操作日志中提取命令行信息</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">解析操作日志，提取时间信息和命令行</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">input_any_exit</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        input(<span class="string">"\r\nEnter any key to exit... "</span>)</span><br><span class="line">    <span class="keyword">finally</span>:</span><br><span class="line">        sys.exit(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">check_file</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;请将操作日志重命名为cmd.log放在当前目录下"</span>)</span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        input(<span class="string">"Enter any key to continue... "</span>)</span><br><span class="line">        file =<span class="string">"cmd.log"</span></span><br><span class="line">        <span class="keyword">if</span> os.path.isfile(file):</span><br><span class="line">            <span class="keyword">return</span> file</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(<span class="string">"&gt;&gt;&gt;Error: 当前目录下未找到%s文件!"</span>%(file))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_file</span><span class="params">(file)</span>:</span></span><br><span class="line">    f =open(file,<span class="string">"r"</span>)</span><br><span class="line">    log =f.read()</span><br><span class="line">    log_list =log.split(<span class="string">'StartTime'</span>)</span><br><span class="line">    list = []</span><br><span class="line">    <span class="keyword">for</span> cmd <span class="keyword">in</span> log_list:</span><br><span class="line">        <span class="comment">#cmd = 'StartTime' + i</span></span><br><span class="line">        re_list=[<span class="string">r'\r\n'</span>,<span class="string">r'\r'</span>,<span class="string">r'\n'</span>]</span><br><span class="line">        <span class="keyword">for</span> r <span class="keyword">in</span> re_list:</span><br><span class="line">            cmd = re.sub(r,<span class="string">""</span>,cmd)</span><br><span class="line">        cmd = cmd + <span class="string">"\n"</span>  <span class="comment"># 在结尾加换行符</span></span><br><span class="line">        <span class="comment">#print(cmd)</span></span><br><span class="line">        list.append(cmd)</span><br><span class="line">    f.close()</span><br><span class="line">    <span class="keyword">return</span> list</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">which_run</span><span class="params">(file)</span>:</span></span><br><span class="line">    print(<span class="string">"a:提取时间戳和命令行"</span>)</span><br><span class="line">    print(<span class="string">"b:提取命令行"</span>)</span><br><span class="line">    num = input(<span class="string">"which one(a/b):"</span>).lower()</span><br><span class="line">    <span class="keyword">if</span> num == <span class="string">'a'</span>:</span><br><span class="line">        run_time(get_file(file),file)</span><br><span class="line">    <span class="keyword">elif</span> num == <span class="string">'b'</span>:</span><br><span class="line">        run_cmd(get_file(file),file)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        which_run(file)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">delete_login</span><span class="params">(list)</span>:</span></span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        yes_or_no = input(<span class="string">"是否清除'/--- * ----/'信息[y/n]:"</span>).lower()</span><br><span class="line">        <span class="keyword">if</span> yes_or_no == <span class="string">'y'</span>:</span><br><span class="line">            list_new=[]</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> list:</span><br><span class="line">                <span class="keyword">if</span> i.find(<span class="string">"/---"</span>) == <span class="number">-1</span>:</span><br><span class="line">                    list_new.append(i)</span><br><span class="line">            <span class="keyword">return</span> list_new</span><br><span class="line">        <span class="keyword">elif</span> yes_or_no == <span class="string">'n'</span>:</span><br><span class="line">            <span class="keyword">return</span> list</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">delete_show</span><span class="params">(list)</span>:</span></span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        yes_or_no=input(<span class="string">"是否清除show命令[y/n]:"</span>).lower()</span><br><span class="line">        <span class="keyword">if</span> yes_or_no == <span class="string">'y'</span>:</span><br><span class="line">            list_new=[]</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> list:</span><br><span class="line">                <span class="keyword">if</span> i.find(<span class="string">"show"</span>) == <span class="number">-1</span>:</span><br><span class="line">                    list_new.append(i)</span><br><span class="line">            <span class="keyword">return</span> list_new</span><br><span class="line">        <span class="keyword">elif</span> yes_or_no == <span class="string">'n'</span>:</span><br><span class="line">            <span class="keyword">return</span> list</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">run_cmd</span><span class="params">(list,file)</span>:</span></span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;提取命令行"</span>)</span><br><span class="line">    list_new =delete_login(list)</span><br><span class="line">    list_new =delete_show(list_new)</span><br><span class="line">    time_now = time.strftime(<span class="string">"%Y-%m-%d_%H-%M"</span>, time.localtime())</span><br><span class="line">    filename=file.split(<span class="string">"."</span>)[<span class="number">0</span>]+<span class="string">"_cmd_&#123;&#125;.log"</span>.format(time_now)</span><br><span class="line">    f = open(filename, <span class="string">"w"</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> list_new:</span><br><span class="line">        cmd =i.split(<span class="string">'CMDLine: '</span>)[<span class="number">-1</span>]</span><br><span class="line">        f.write(cmd)</span><br><span class="line">    f.close()</span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;执行完毕，输出%s"</span>%(filename))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">run_time</span><span class="params">(list,file)</span>:</span></span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;提取时间戳和命令行"</span>)</span><br><span class="line">    list_new = delete_login(list)</span><br><span class="line">    list_new = delete_show(list_new)</span><br><span class="line">    time_now = time.strftime(<span class="string">"%Y-%m-%d_%H-%M"</span>, time.localtime())</span><br><span class="line">    filename=file.split(<span class="string">"."</span>)[<span class="number">0</span>]+<span class="string">"_time_&#123;&#125;.log"</span>.format(time_now)</span><br><span class="line">    f = open(filename, <span class="string">"w"</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> list_new:</span><br><span class="line">        mat = re.findall(<span class="string">r"(\d&#123;1,2&#125;:\d&#123;1,2&#125;:\d&#123;1,2&#125;\s\d&#123;1,2&#125;-\d&#123;1,2&#125;-\d&#123;4&#125;)"</span>, i)</span><br><span class="line">        cmd1 =<span class="string">" "</span>.join(mat)</span><br><span class="line">        <span class="comment">#cmd1 =i.split('FlowID:')[0]</span></span><br><span class="line">        cmd2 =i.split(<span class="string">'CMDLine: '</span>)[<span class="number">-1</span>]</span><br><span class="line">        cmd =cmd1+<span class="string">" "</span>+cmd2</span><br><span class="line">        f.write(cmd)</span><br><span class="line">    f.close()</span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;执行完毕，输出%s"</span>%(filename))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    print(<span class="string">"******** Welcome to use this tool! ********"</span>)</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        which_run(check_file())</span><br><span class="line">    <span class="keyword">except</span> (Exception) <span class="keyword">as</span> e:</span><br><span class="line">        print(e)</span><br><span class="line">    <span class="keyword">finally</span>:</span><br><span class="line">        input_any_exit()</span><br></pre></td></tr></table></figure>
 
           
         
@@ -721,7 +900,7 @@ http://python.org/downloads/
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -732,7 +911,7 @@ http://python.org/downloads/
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -743,7 +922,7 @@ http://python.org/downloads/
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -837,7 +1016,7 @@ http://python.org/downloads/
     
       <span class="post-meta-item-text">博客全站字数&#58;</span>
     
-    <span title="博客全站字数">852</span>
+    <span title="博客全站字数">1.1k</span>
   
 </div>
 
