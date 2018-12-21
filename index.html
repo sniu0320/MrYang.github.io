@@ -319,6 +319,294 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/uncategorized/新装linux配置/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mr.Yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mr.Yang's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/uncategorized/新装linux配置/" itemprop="url">新装linux系统配置</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-21T22:47:26+08:00">
+                2018-12-21
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-21T22:50:13+08:00">
+                2018-12-21
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="新装linux系统配置"><a href="#新装linux系统配置" class="headerlink" title="新装linux系统配置"></a>新装linux系统配置</h1><h2 id="centos7"><a href="#centos7" class="headerlink" title="centos7"></a>centos7</h2><ul>
+<li><p><strong>修改hostname</strong></p>
+<pre><code class="python">[root@centos7 ~]$ hostnamectl set-hostname centos7 <span class="comment"># 使用这个命令会立即生效且重启也生效 </span>
+</code></pre>
+<p>其他版本参考：<a href="https://www.cnblogs.com/zhaojiedi1992/p/zhaojiedi_linux_043_hostname.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhaojiedi1992/p/zhaojiedi_linux_043_hostname.html</a> </p>
+</li>
+<li><p><strong>升级组件</strong> </p>
+<pre><code>yum upgrade 
+yum update 
+</code></pre></li>
+<li><p><strong>安装vim</strong> </p>
+<pre><code class="python">yum -y install vim <span class="comment">#默认就能用，不用在替换 </span>
+<span class="comment">#yum remove vim </span>
+</code></pre>
+</li>
+<li><p><strong>查看系统版本</strong> </p>
+<pre><code class="python">yum update <span class="comment">#升级 </span>
+lsb_release -a 
+<span class="comment">#如果没有lsb </span>
+yum install redhat-lsb -y 
+</code></pre>
+</li>
+</ul>
+<h2 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h2><ul>
+<li><p><strong>无法使用ifconfig</strong> </p>
+<pre><code class="python">sudo apt-get install net-tools 
+</code></pre>
+</li>
+<li><p><strong>软件升级</strong> </p>
+<pre><code class="python">sudo apt-get update <span class="comment"># 升级安装包相关的命令,刷新可安装的软件列表(但是不做任何实际的安装动作) </span>
+sudo apt-get upgrade <span class="comment"># 进行安装包的更新(软件版本的升级) </span>
+sudo apt-get dist-upgrade <span class="comment"># 进行系统版本的升级(Ubuntu版本的升级) </span>
+sudo do-release-upgrade <span class="comment"># Ubuntu官方推荐的系统升级方式,若加参数-d还可以升级到开发版本,但会不稳定 </span>
+</code></pre>
+</li>
+<li><strong>vi下删除键和上下左右键的异常解决</strong> <pre><code class="python"><span class="comment"># 下载完整vim即可解决： </span>
+sudo apt-get remove vim-common 
+sudo apt-get install vim-gtk <span class="comment">#安装vim </span>
+</code></pre>
+</li>
+<li><strong>开启ssh</strong> <pre><code class="python">sudo apt-get update <span class="comment">#更新源列表 </span>
+sudo apt-get install openssh-server <span class="comment">#安装openssh-server </span>
+sudo ps -e |grep ssh <span class="comment">#查看ssh服务是否启动，有sshd说明已经启动，如果没有启动，输入"sudo service ssh start"启动。 </span>
+</code></pre>
+</li>
+<li><strong>查看系统版本</strong> <pre><code class="python">lsb_release -a 
+</code></pre>
+</li>
+</ul>
+<h2 id="添加新用户"><a href="#添加新用户" class="headerlink" title="添加新用户"></a>添加新用户</h2><blockquote>
+<p>centos7</p>
+<ul>
+<li><strong>禁止root账号登陆</strong><pre><code class="python">$ vi /etc/ssh/sshd.conf <span class="comment">#ssh服务的配置文件，直接修改 </span>
+PermitRootLogin no <span class="comment">#找到这一行，并将其改为 no </span>
+保存退出 
+$ systemctl restart sshd <span class="comment">#重启一下sshd服务 </span>
+</code></pre>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><strong>创建用户并授权</strong> <pre><code class="python">$ adduser sss <span class="comment">#创建用户sss </span>
+$ passwd sss <span class="comment">#创建sss的密码 </span>
+$ chmod -v u+w /etc/sudoers   <span class="comment">#增加 sudoers 文件的写的权限，默认为只读 </span>
+$ vi /etc/sudoers <span class="comment">#修改 sudoers </span>
+root    ALL=(ALL)       ALL 
+sss    ALL=(ALL)       ALL <span class="comment">#添加这一行 </span>
+保存，退出 
+$ chmod -v u-w /etc/sudoers <span class="comment">#删除 sudoers 的写的权限# </span>
+</code></pre>
+</li>
+</ul>
+<h2 id="安装zsh-oh-my-zsh"><a href="#安装zsh-oh-my-zsh" class="headerlink" title="安装zsh  oh-my-zsh"></a>安装zsh  oh-my-zsh</h2><ul>
+<li><p><strong>查看当前安装了多少shell</strong> </p>
+<pre><code class="python">cat /etc/shells 
+</code></pre>
+</li>
+<li><p><strong>确认当前shell</strong> </p>
+<pre><code class="python">echo $SHELL 
+</code></pre>
+</li>
+<li><strong>安装zsh</strong> <pre><code class="python">sudo apt-get install zsh 
+</code></pre>
+</li>
+<li><strong>切换zsh</strong> <pre><code class="python">chsh -s `which zsh` <span class="comment">#之后注销重新登录 </span>
+chsh -s /bin/zsh 
+<span class="comment"># 切回bash </span>
+chsh -s /bin/bash 
+</code></pre>
+</li>
+<li><strong>安装oh-my-zsh</strong><br><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">https://github.com/robbyrussell/oh-my-zsh</a> <pre><code class="python"><span class="comment">#使用curl方式安装： </span>
+sh -c <span class="string">"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</span> 
+</code></pre>
+</li>
+<li><strong>配置主题</strong><br>配置主题, 可以通过修改~/.zshrc中的环境变量ZSH_THEME来完成 <pre><code class="python">ZSH_THEME=<span class="string">"robbyrussell"</span> <span class="comment">#默认主题，简洁但是不显示路径 </span>
+</code></pre>
+更换agnoster主题： <pre><code class="python">ZSH_THEME=<span class="string">"agnoster"</span> <span class="comment">#这个主题需要Powerline字体 </span>
+</code></pre>
+powerline字体安装：<br><a href="https://github.com/powerline/fonts" target="_blank" rel="noopener">https://github.com/powerline/fonts</a> <pre><code class="python">git clone https://github.com/powerline/fonts.git 
+cd fonts 
+./install.sh 
+</code></pre>
+</li>
+<li><strong>隐藏[user@hostname]</strong> <pre><code class="python">在~/.zshrc中添加 
+DEFAULT_USER=<span class="string">"username"</span> <span class="comment">#ssh的时候没用？ </span>
+</code></pre>
+</li>
+<li><strong>配置插件</strong><br>推荐一：（zsh-autosuggestions历史命令智能提示插件） <pre><code class="python">git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions 
+</code></pre>
+推荐二：（zsh-syntax-highlighting命令行代码高亮插件） <pre><code class="python">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting 
+</code></pre>
+插件生效 <pre><code class="python">vim ~/.zshrc 
+plugins=( 
+git 
+zsh-autosuggestions 
+zsh-syntax-highlighting 
+) 
+</code></pre>
+<h2 id="vim插件：vimplus安装"><a href="#vim插件：vimplus安装" class="headerlink" title="vim插件：vimplus安装"></a>vim插件：vimplus安装</h2></li>
+<li><strong>vimplus(在当前用户下安装只能在当前用户使用)</strong><br>安装之后vim更新为8.1 <pre><code class="python">git clone https://github.com/chxuan/vimplus.git ~/.vimplus 
+cd ~/.vimplus 
+./install.sh 
+</code></pre>
+参考：<a href="https://github.com/chxuan/vimplus" target="_blank" rel="noopener">https://github.com/chxuan/vimplus</a> </li>
+<li><strong>安装jedi</strong><br>YCM对python的只是需要安装jedi <pre><code class="python">pip install jedi 
+</code></pre>
+</li>
+<li><strong>补充vim插件</strong><br>编辑.vimrc，增加下列插件，并安装 <pre><code class="python">Plug <span class="string">'Yggdroot/indentLine'</span> <span class="string">"缩进指示线 </span>
+<span class="string">Plug 'tell-k/vim-autopep8' "</span>需要pip install autopep8 
+</code></pre>
+</li>
+<li><strong>YouCompleteMe</strong><br>假如一些正常的话，等上面的命令执行完毕之后就算是完成了，但是很多时候，会在下载YouCompleteMe出错，这里需要手动的单独去安装这个插件<br>vimplus安装时需要访问外国网站，由于网络原因，可能会失败，安装成功也要1个多小时，ycm插件有200M左右，下载比较耗时，这里有下载好的YouCompleteMe.tar.gz文件<br>下载后解压到~/.vim/plugged/目录，并进入YouCompleteMe目录，linux用户执行./install.py —clang-completer，mac用户执行./install.py —clang-completer —system-libclang即可安装。 <pre><code class="python">rm -rf ~/.vim/plugged/YouCompleteMe 
+cd ~/.vim/plugged 
+<span class="comment">#解压到此目录下 </span>
+cd YouCompleteMe 
+./install.py --clang-completer 
+</code></pre>
+</li>
+<li>备注：jedi-vim插件 <pre><code class="python">git clone --recursive https://github.com/davidhalter/jedi-vim.git ~/.vim/plugged/jedi-vim 
+Plug <span class="string">'davidhalter/jedi-vim'</span> <span class="string">"有YCM这个不用 </span>
+</code></pre>
+<h2 id="linux-文件修改所有者-用户组"><a href="#linux-文件修改所有者-用户组" class="headerlink" title="linux 文件修改所有者/用户组"></a>linux 文件修改所有者/用户组</h2></li>
+<li><strong>1. linux下修改文件用户组</strong><br>chgrp： change group的简写，修改文件所属的用户组 <pre><code class="vim">chgrp users test.<span class="built_in">log</span> 
+</code></pre>
+修改后查看 ls -l <pre><code class="vim">-rwxrwx--- <span class="number">1</span> work users <span class="number">0</span> Jun <span class="number">8</span> <span class="number">15</span>:<span class="number">46</span> test.<span class="built_in">log</span> 
+</code></pre>
+如果要修改该目录下所有文件和目录，使用-R参数 <pre><code class="vim">chgrp -R users test 
+</code></pre>
+要被改变的group名，必须在 /etc/group 文件中。<br>/etc/group文件记录系统中所有的组名称。 </li>
+<li><strong>2. linux下修改文件所有者</strong><br>chown ：change owner的简写， 修改文件的所有者 <pre><code class="vim">chown [-R] 账号名称 文件或目录 
+</code></pre>
+-R 递归，将子目录下文件全部修改。<br>将文件所有者修改bin <pre><code class="vim">chown bin test.<span class="built_in">log</span> 
+</code></pre>
+修改的用户必须在/etc/passwd文件中<br>/etc/passwd记录用户信息。<br>chown还可以修改组名称 <pre><code class="vim">chown roo<span class="variable">t:root</span> test.<span class="built_in">log</span> 
+</code></pre>
+将所有者和组名称都修改为root。 </li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/鸡汤/转载-真正厉害的人，早已戒掉了情绪/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1264,7 +1552,7 @@ http://python.org/downloads/
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1275,7 +1563,7 @@ http://python.org/downloads/
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1286,7 +1574,7 @@ http://python.org/downloads/
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1380,7 +1668,7 @@ http://python.org/downloads/
     
       <span class="post-meta-item-text">博客全站字数&#58;</span>
     
-    <span title="博客全站字数">3.7k</span>
+    <span title="博客全站字数">4.9k</span>
   
 </div>
 
