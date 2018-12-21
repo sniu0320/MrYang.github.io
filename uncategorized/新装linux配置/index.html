@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="Mr.Yang&#39;s Blog">
 <meta property="og:description" content="新装linux系统配置centos7 修改hostname [root@centos7 ~]$ hostnamectl set-hostname centos7 # 使用这个命令会立即生效且重启也生效   其他版本参考：https://www.cnblogs.com/zhaojiedi1992/p/zhaojiedi_linux_043_hostname.html   升级组件  yum upgr">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-21T14:50:13.578Z">
+<meta property="og:updated_time" content="2018-12-21T14:56:33.375Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="新装linux系统配置">
 <meta name="twitter:description" content="新装linux系统配置centos7 修改hostname [root@centos7 ~]$ hostnamectl set-hostname centos7 # 使用这个命令会立即生效且重启也生效   其他版本参考：https://www.cnblogs.com/zhaojiedi1992/p/zhaojiedi_linux_043_hostname.html   升级组件  yum upgr">
@@ -367,7 +367,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-21T22:50:13+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-21T22:56:33+08:00">
                 2018-12-21
               </time>
             
@@ -452,17 +452,17 @@ sudo ps -e |grep ssh <span class="comment">#查看ssh服务是否启动，有ssh
 </ul>
 <h2 id="添加新用户"><a href="#添加新用户" class="headerlink" title="添加新用户"></a>添加新用户</h2><blockquote>
 <p>centos7</p>
+</blockquote>
 <ul>
-<li><strong>禁止root账号登陆</strong><pre><code class="python">$ vi /etc/ssh/sshd.conf <span class="comment">#ssh服务的配置文件，直接修改 </span>
+<li><p><strong>禁止root账号登陆</strong></p>
+<pre><code class="python">$ vi /etc/ssh/sshd.conf <span class="comment">#ssh服务的配置文件，直接修改 </span>
 PermitRootLogin no <span class="comment">#找到这一行，并将其改为 no </span>
 保存退出 
 $ systemctl restart sshd <span class="comment">#重启一下sshd服务 </span>
 </code></pre>
 </li>
-</ul>
-</blockquote>
-<ul>
-<li><strong>创建用户并授权</strong> <pre><code class="python">$ adduser sss <span class="comment">#创建用户sss </span>
+<li><p><strong>创建用户并授权</strong> </p>
+<pre><code class="python">$ adduser sss <span class="comment">#创建用户sss </span>
 $ passwd sss <span class="comment">#创建sss的密码 </span>
 $ chmod -v u+w /etc/sudoers   <span class="comment">#增加 sudoers 文件的写的权限，默认为只读 </span>
 $ vi /etc/sudoers <span class="comment">#修改 sudoers </span>
@@ -576,6 +576,21 @@ Plug <span class="string">'davidhalter/jedi-vim'</span> <span class="string">"�
 
       
       
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
       
 
       
@@ -608,32 +623,6 @@ Plug <span class="string">'davidhalter/jedi-vim'</span> <span class="string">"�
 
 
     <div class="post-spread">
-      
-        <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-<span class="jiathis_txt">分享到：</span>
-<a class="jiathis_button_fav">收藏夹</a>
-<a class="jiathis_button_copy">复制网址</a>
-<a class="jiathis_button_email">邮件</a>
-<a class="jiathis_button_weixin">微信</a>
-<a class="jiathis_button_qzone">QQ空间</a>
-<a class="jiathis_button_tqq">腾讯微博</a>
-<a class="jiathis_button_douban">豆瓣</a>
-<a class="jiathis_button_share">一键分享</a>
-
-<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-<a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript">
-var jiathis_config={
-  data_track_clickback:true,
-  summary:"",
-  shortUrl:false,
-  hideMore:false
-}
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
-<!-- JiaThis Button END -->
       
     </div>
   </div>
@@ -861,6 +850,12 @@ var jiathis_config={
 
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -1320,6 +1315,43 @@ var jiathis_config={
   
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
   
 
   
