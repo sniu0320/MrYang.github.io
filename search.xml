@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【转载】提升产品质量-需求质量]]></title>
+    <url>%2F%E5%B7%A5%E4%BD%9C%2F%E3%80%90%E8%BD%AC%E8%BD%BD%E3%80%91%E6%8F%90%E5%8D%87%E4%BA%A7%E5%93%81%E8%B4%A8%E9%87%8F-%E9%9C%80%E6%B1%82%E8%B4%A8%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[##【现状】一句话的需求；需求清单、原型、高保真不一致；需求变更没有维护也没有更变记录、没有通知项目所有成员；需求、开发、测试理解不一致；在开发、测试过程中需求变更较频繁；在验收的时候各种细节问题….。产品考虑不周全或者逻辑存在问题，在开发或者测试阶段才暴露；##【如上情况如何保障项目质量】需求评审、用例设计、开发期间尽可能的暴露需求设计不合理，逻辑错误等问题；提前让产品介入体验、一确定是否达到预期、二是尽早发现及解决不满足的问题；若没有产品经理时、测试管理人员或者测试人员要站在用户角度都去思考场景；去解决需求存在的问题。测试用例必须经过项目组评审，将做为整个项目质量保障的基线；##【如何提升需求质量】站在测试设计的角度将需求、原型要注意的细节整理成《需求细化参考清单》；结合项目情况将共性需求整理成规范，例如input要考虑的场景：1）placeholder提示语 2）长度 3）合法字符 4）输入非法字符、超长字符提示 5）是否为空 6）特殊场景（大小写是否都支持）6)是否有默认值；整理出共性的异常情况（服务器宕、网络异场、磁盘空间不足），列入《需求细化参考清单》或者做为一个标准化的需求去处理；将项目过程中及交付遇到的问题、整理归档、将共性问题提取出来；纳入《需求细化参考清单》；需求测试分析：将需求拆分成story/功能点，结合测试设计方法进行需求分析，尽早发现需求中没有考虑到情况；待《需求细化参考清单》可以做为需求文档编写规范时，在项目组或者公司推广；##【目的】尽早发现产品的问题；提升项目质量与生产效率；从源头提升项目质量;]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>工作</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[快速关电脑]]></title>
     <url>%2F%E5%AD%A6%E4%B9%A0%2Fpython%2F%E5%BF%AB%E9%80%9F%E5%85%B3%E7%94%B5%E8%84%91%2F</url>
     <content type="text"><![CDATA[windows创建.bat文件，输入：1shutdown -s -f -t 0 #强制立即关机python1234567import os#linux系统os.system("poweroff")#windows系统os.system("shutdown -s -t 0")os.system('shutdown -s -f -t 0') #强制立即关机获取本机ip地址123456789101112131415161718192021# -*- coding: utf-8 -*-import socket# 查看当前主机名print('当前主机名称为 : ' + socket.gethostname())# 根据主机名称获取当前IPprint('当前主机的IP为: ' + socket.gethostbyname(socket.gethostname()))# 下方代码为获取当前主机IPV4 和IPV6的所有IP地址(所有系统均通用)addrs = socket.getaddrinfo(socket.gethostname(),None)for item in addrs: print(item)# 仅获取当前IPV4地址for item in addrs: if ':' not in item[4][0]: print('当前主机IPV4地址为:' + item[4][0]) break]]></content>
