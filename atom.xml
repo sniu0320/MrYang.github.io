@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sniu0320.com/"/>
-  <updated>2019-01-07T13:10:33.852Z</updated>
+  <updated>2019-01-07T15:28:54.531Z</updated>
   <id>https://sniu0320.com/</id>
   
   <author>
@@ -21,11 +21,17 @@
     <link href="https://sniu0320.com/posts/fa88ee57.html"/>
     <id>https://sniu0320.com/posts/fa88ee57.html</id>
     <published>2018-12-29T13:27:18.000Z</published>
-    <updated>2019-01-07T13:10:33.852Z</updated>
+    <updated>2019-01-07T15:28:54.531Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Jan 07 2019 22:40:41 GMT+0800 (China Standard Time) --&gt;&lt;h1 id=&quot;2018年总结&quot;&gt;&lt;a href=&quot;#2018年总结&quot; class=&quot;headerlink&quot; title=&quot;2018年总结&quot;&gt;&lt;/a&gt;2018年总结&lt;/h1&gt;&lt;h2 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;上半年瞎忙缺少思考，下半年很忙很累很烦&lt;/li&gt;&lt;li&gt;尝试使用工具&lt;strong&gt;禅道&lt;/strong&gt;进行任务跟踪和工程故障跟踪，因9月份攻关，没有坚持下来&lt;/li&gt;&lt;li&gt;尝试配对测试，对进度影响不大但对质量提升有效果&lt;/li&gt;&lt;li&gt;抓关键任务，要求修改方案提前传递并组织答疑会，开发和测试在答疑的同时确认关键修改和风险点&lt;/li&gt;&lt;li&gt;工程故障接口人做的很痛苦，有时候真叫不动人&lt;/li&gt;&lt;li&gt;最近一段时间工作经常出现情绪问题，影响工作效率
+      &lt;h1 id=&quot;2018年总结&quot;&gt;&lt;a href=&quot;#2018年总结&quot; class=&quot;headerlink&quot; title=&quot;2018年总结&quot;&gt;&lt;/a&gt;2018年总结&lt;/h1&gt;&lt;h2 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;上半年瞎忙缺少思考，下半年很忙很累很烦&lt;/li&gt;
+&lt;li&gt;尝试使用工具&lt;strong&gt;禅道&lt;/strong&gt;进行任务跟踪和工程故障跟踪，因9月份攻关，没有坚持下来&lt;/li&gt;
+&lt;li&gt;尝试配对测试，对进度影响不大但对质量提升有效果&lt;/li&gt;
+&lt;li&gt;抓关键任务，要求修改方案提前传递并组织答疑会，开发和测试在答疑的同时确认关键修改和风险点&lt;/li&gt;
+&lt;li&gt;工程故障接口人做的很痛苦，有时候真叫不动人&lt;/li&gt;
+&lt;li&gt;最近一段时间工作经常出现情绪问题，影响工作效率
     
     </summary>
     
@@ -45,7 +51,14 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Jan 07 2019 22:40:41 GMT+0800 (China Standard Time) --&gt;&lt;h2 id=&quot;【现状】&quot;&gt;&lt;a href=&quot;#【现状】&quot; class=&quot;headerlink&quot; title=&quot;【现状】&quot;&gt;&lt;/a&gt;【现状】&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;一句话的需求；&lt;/li&gt;&lt;li&gt;需求清单、原型、高保真不一致；&lt;/li&gt;&lt;li&gt;需求变更没有维护也没有更变记录、没有通知项目所有成员；&lt;/li&gt;&lt;li&gt;需求、开发、测试理解不一致；&lt;/li&gt;&lt;li&gt;在开发、测试过程中需求变更较频繁；&lt;/li&gt;&lt;li&gt;在验收的时候各种细节问题….。&lt;/li&gt;&lt;li&gt;产品考虑不周全或者逻辑存在问题，在开发或者测试阶段才暴露；
+      &lt;h2 id=&quot;【现状】&quot;&gt;&lt;a href=&quot;#【现状】&quot; class=&quot;headerlink&quot; title=&quot;【现状】&quot;&gt;&lt;/a&gt;【现状】&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;一句话的需求；&lt;/li&gt;
+&lt;li&gt;需求清单、原型、高保真不一致；&lt;/li&gt;
+&lt;li&gt;需求变更没有维护也没有更变记录、没有通知项目所有成员；&lt;/li&gt;
+&lt;li&gt;需求、开发、测试理解不一致；&lt;/li&gt;
+&lt;li&gt;在开发、测试过程中需求变更较频繁；&lt;/li&gt;
+&lt;li&gt;在验收的时候各种细节问题….。&lt;/li&gt;
+&lt;li&gt;产品考虑不周全或者逻辑存在问题，在开发或者测试阶段才暴露；
     
     </summary>
     
@@ -67,7 +80,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Jan 07 2019 22:40:41 GMT+0800 (China Standard Time) --&gt;&lt;h2 id=&quot;关机&quot;&gt;&lt;a href=&quot;#关机&quot; class=&quot;headerlink&quot; title=&quot;关机&quot;&gt;&lt;/a&gt;关机&lt;/h2&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; os&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#linux系统&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;os.system(&lt;span class=&quot;string&quot;&gt;&quot;poweroff&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#windows系统&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;os.system(&lt;span class=&quot;string&quot;&gt;&quot;shutdown -s -t 0&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;os.system(&lt;span class=&quot;string&quot;&gt;&#39;shutdown -s -f -t 0&#39;&lt;/span&gt;)  &lt;span class=&quot;comment&quot;&gt;#强制立即关机&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;h2 id=&quot;关机&quot;&gt;&lt;a href=&quot;#关机&quot; class=&quot;headerlink&quot; title=&quot;关机&quot;&gt;&lt;/a&gt;关机&lt;/h2&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; os&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#linux系统&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;os.system(&lt;span class=&quot;string&quot;&gt;&quot;poweroff&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#windows系统&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;os.system(&lt;span class=&quot;string&quot;&gt;&quot;shutdown -s -t 0&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;os.system(&lt;span class=&quot;string&quot;&gt;&#39;shutdown -s -f -t 0&#39;&lt;/span&gt;)  &lt;span class=&quot;comment&quot;&gt;#强制立即关机&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -89,7 +102,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Jan 07 2019 22:42:32 GMT+0800 (China Standard Time) --&gt;&lt;h2 id=&quot;软件测试工程师，产品的最初用户&quot;&gt;&lt;a href=&quot;#软件测试工程师，产品的最初用户&quot; class=&quot;headerlink&quot; title=&quot;软件测试工程师，产品的最初用户&quot;&gt;&lt;/a&gt;软件测试工程师，产品的最初用户&lt;/h2&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160; 一个好的产品，离不开软件测试工程师多个迭代的反复测试，要注重每个细节，充分理解每一个功能的业务逻辑。模块间出现衔接问题时，测试首先发现，当感觉功能不好用时，我们测试也要提出问题，同时给出相对应的改进建议。&lt;br&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;综上，测试工程师就是诊治一个产品，判断它实现的业务功能是否符合需求、使用是否符合用户的操作习惯、是否友好&amp;amp;便捷，它是否可以变成更好的产品，给用户更好的体验。&lt;br&gt;
+      &lt;h2 id=&quot;软件测试工程师，产品的最初用户&quot;&gt;&lt;a href=&quot;#软件测试工程师，产品的最初用户&quot; class=&quot;headerlink&quot; title=&quot;软件测试工程师，产品的最初用户&quot;&gt;&lt;/a&gt;软件测试工程师，产品的最初用户&lt;/h2&gt;&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160; 一个好的产品，离不开软件测试工程师多个迭代的反复测试，要注重每个细节，充分理解每一个功能的业务逻辑。模块间出现衔接问题时，测试首先发现，当感觉功能不好用时，我们测试也要提出问题，同时给出相对应的改进建议。&lt;br&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;综上，测试工程师就是诊治一个产品，判断它实现的业务功能是否符合需求、使用是否符合用户的操作习惯、是否友好&amp;amp;便捷，它是否可以变成更好的产品，给用户更好的体验。&lt;br&gt;
     
     </summary>
     
@@ -111,7 +124,10 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Jan 07 2019 22:40:41 GMT+0800 (China Standard Time) --&gt;&lt;blockquote&gt;&lt;p&gt;常规配置、组件安装、小技巧等&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;常规配置、组件安装、小技巧等&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
     
     </summary>
     
@@ -133,7 +149,9 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Jan 07 2019 22:40:41 GMT+0800 (China Standard Time) --&gt;&lt;blockquote&gt;&lt;p&gt;戒掉情绪，你就成功了一半。&lt;/p&gt;&lt;/blockquote&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;戒掉情绪，你就成功了一半。&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -155,7 +173,9 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Jan 07 2019 22:40:41 GMT+0800 (China Standard Time) --&gt;&lt;blockquote&gt;&lt;p&gt;Gate One is an HTML5-powered terminal emulator and SSH client&lt;br&gt;&lt;a href=&quot;https://github.com/liftoff/GateOne&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官网 https://github.com/liftoff/GateOne&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;Gate One is an HTML5-powered terminal emulator and SSH client&lt;br&gt;&lt;a href=&quot;https://github.com/liftoff/GateOne&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官网 https://github.com/liftoff/GateOne&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -177,7 +197,9 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Jan 07 2019 22:40:41 GMT+0800 (China Standard Time) --&gt;&lt;blockquote&gt;&lt;p&gt;Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。&lt;/p&gt;&lt;/blockquote&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -199,7 +221,9 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Jan 07 2019 22:40:41 GMT+0800 (China Standard Time) --&gt;&lt;blockquote&gt;&lt;p&gt;实现从设备操作日志中提取命令行信息、简化打印，便于查看、提高效率&lt;/p&gt;&lt;/blockquote&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;实现从设备操作日志中提取命令行信息、简化打印，便于查看、提高效率&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -221,7 +245,9 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Jan 07 2019 22:40:41 GMT+0800 (China Standard Time) --&gt;&lt;blockquote&gt;&lt;p&gt;ubuntu、centos、macOS 以及 windows系统下的python3安装&lt;/p&gt;&lt;/blockquote&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;ubuntu、centos、macOS 以及 windows系统下的python3安装&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
