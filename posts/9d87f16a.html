@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Mr.Yang&#39;s Blog">
 <meta property="og:description" content="常规配置、组件安装、小技巧等  [TOC]">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-06T14:40:08.685Z">
+<meta property="og:updated_time" content="2019-01-09T23:17:37.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux笔记">
 <meta name="twitter:description" content="常规配置、组件安装、小技巧等  [TOC]">
@@ -108,7 +108,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-基本配置"><span class="toc-number">1.</span> <span class="toc-text">1.基本配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-开启ssh服务"><span class="toc-number">2.</span> <span class="toc-text">2.开启ssh服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-添加用户"><span class="toc-number">3.</span> <span class="toc-text">3.添加用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-安装zsh-oh-my-zsh"><span class="toc-number">4.</span> <span class="toc-text">4.安装zsh  oh-my-zsh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-vim插件vimplus安装"><span class="toc-number">5.</span> <span class="toc-text">5.vim插件vimplus安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-文件属性修改"><span class="toc-number">6.</span> <span class="toc-text">6.文件属性修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-rsync远程数据同步工具"><span class="toc-number">7.</span> <span class="toc-text">7.rsync远程数据同步工具</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-基本配置"><span class="toc-number">1.</span> <span class="toc-text">1.基本配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-开启ssh服务"><span class="toc-number">2.</span> <span class="toc-text">2.开启ssh服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-添加用户"><span class="toc-number">3.</span> <span class="toc-text">3.添加用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-安装zsh-oh-my-zsh"><span class="toc-number">4.</span> <span class="toc-text">4.安装zsh  oh-my-zsh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-vim插件vimplus安装"><span class="toc-number">5.</span> <span class="toc-text">5.vim插件vimplus安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-文件属性修改"><span class="toc-number">6.</span> <span class="toc-text">6.文件属性修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-rsync远程数据同步工具"><span class="toc-number">7.</span> <span class="toc-text">7.rsync远程数据同步工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-启动和停止服务"><span class="toc-number">8.</span> <span class="toc-text">8.启动和停止服务</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -263,6 +263,9 @@
 <li><p>Linux系统与windows系统文件同步<br><a href="https://my.oschina.net/lanni654321/blog/369595" target="_blank" rel="noopener">https://my.oschina.net/lanni654321/blog/369595</a></p>
 </li>
 </ul>
+<h2 id="8-启动和停止服务"><a href="#8-启动和停止服务" class="headerlink" title="8.启动和停止服务"></a>8.启动和停止服务</h2><ul>
+<li>systemd<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">systemctl status sshd.service <span class="comment">#查看状态</span></span><br><span class="line">systemctl start sshd.service <span class="comment">#启动sshd</span></span><br><span class="line">systemctl enable sshd.service <span class="comment">#配置sshd自启动</span></span><br><span class="line">systemctl restart sshd.service <span class="comment">#重启一下sshd服务 </span></span><br><span class="line">systemctl enable/disable sshd.service <span class="comment">#设置开机启动</span></span><br></pre></td></tr></table></figure></li>
+</ul>
 
   </div>
 </article>
@@ -290,7 +293,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-基本配置"><span class="toc-number">1.</span> <span class="toc-text">1.基本配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-开启ssh服务"><span class="toc-number">2.</span> <span class="toc-text">2.开启ssh服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-添加用户"><span class="toc-number">3.</span> <span class="toc-text">3.添加用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-安装zsh-oh-my-zsh"><span class="toc-number">4.</span> <span class="toc-text">4.安装zsh  oh-my-zsh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-vim插件vimplus安装"><span class="toc-number">5.</span> <span class="toc-text">5.vim插件vimplus安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-文件属性修改"><span class="toc-number">6.</span> <span class="toc-text">6.文件属性修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-rsync远程数据同步工具"><span class="toc-number">7.</span> <span class="toc-text">7.rsync远程数据同步工具</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-基本配置"><span class="toc-number">1.</span> <span class="toc-text">1.基本配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-开启ssh服务"><span class="toc-number">2.</span> <span class="toc-text">2.开启ssh服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-添加用户"><span class="toc-number">3.</span> <span class="toc-text">3.添加用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-安装zsh-oh-my-zsh"><span class="toc-number">4.</span> <span class="toc-text">4.安装zsh  oh-my-zsh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-vim插件vimplus安装"><span class="toc-number">5.</span> <span class="toc-text">5.vim插件vimplus安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-文件属性修改"><span class="toc-number">6.</span> <span class="toc-text">6.文件属性修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-rsync远程数据同步工具"><span class="toc-number">7.</span> <span class="toc-text">7.rsync远程数据同步工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-启动和停止服务"><span class="toc-number">8.</span> <span class="toc-text">8.启动和停止服务</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
