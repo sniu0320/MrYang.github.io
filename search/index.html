@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-CN">
+<html class="theme-next mist use-motion" lang="">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -108,13 +108,13 @@
 
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="search">
+<meta property="og:title" content="Search">
 <meta property="og:url" content="https://sniu0320.com/search/index.html">
 <meta property="og:site_name" content="Mr.Yang&#39;s Blog">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-12T13:30:13.220Z">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-01-13T14:42:53.053Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="search">
+<meta name="twitter:title" content="Search">
 
 
 
@@ -133,7 +133,7 @@
   };
 </script>
 
-  <title>search | Mr.Yang's Blog</title>
+  <title>Search | Mr.Yang's Blog</title>
   
 
 
@@ -184,7 +184,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
 
   
   
@@ -215,7 +215,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -241,7 +241,7 @@
 
     
 
-    <a href="/" rel="section">首页</a>
+    <a href="/" rel="section">Home</a>
 
   </li>
         
@@ -256,7 +256,7 @@
 
     
 
-    <a href="/tags/" rel="section">标签</a>
+    <a href="/tags/" rel="section">Tags</a>
 
   </li>
         
@@ -271,7 +271,7 @@
 
     
 
-    <a href="/categories/" rel="section">分类</a>
+    <a href="/categories/" rel="section">Categories</a>
 
   </li>
         
@@ -286,7 +286,7 @@
 
     
 
-    <a href="/archives/" rel="section">归档</a>
+    <a href="/archives/" rel="section">Archives</a>
 
   </li>
         
@@ -301,7 +301,7 @@
 
     
 
-    <a href="/about/" rel="section">关于</a>
+    <a href="/about/" rel="section">About</a>
 
   </li>
 
@@ -311,7 +311,7 @@
           
             <a href="javascript:;" class="popup-trigger">
           
-            搜索</a>
+            Search</a>
         </li>
       
     </ul>
@@ -356,7 +356,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -403,7 +403,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">search
+<h2 class="post-title" itemprop="name headline">Search
 
 </h2>
 
@@ -487,7 +487,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">10</span>
-                    <span class="site-state-item-name">日志</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -514,7 +514,7 @@
                       
                     
                     <span class="site-state-item-count">7</span>
-                    <span class="site-state-item-name">分类</span>
+                    <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
               
@@ -537,7 +537,7 @@
                       
                     
                     <span class="site-state-item-count">5</span>
-                    <span class="site-state-item-name">标签</span>
+                    <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
               
@@ -629,9 +629,9 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-      <span class="post-meta-item-text">站点总字数：</span>
+      <span class="post-meta-item-text">Symbols count total: </span>
     
-    <span title="站点总字数">21k</span>
+    <span title="Symbols count total">21k</span>
   
 
   
@@ -1175,7 +1175,7 @@
     $('.highlight').each(function (i, e) {
       var $wrap = $('<div>').addClass('highlight-wrap');
       $(e).after($wrap);
-      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
         var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
           return $(e).text();
         }).toArray().join('\n');
@@ -1202,7 +1202,7 @@
       })).on('mouseleave', function (e) {
         var $b = $(this).find('.copy-btn');
         setTimeout(function () {
-          $b.text('复制');
+          $b.text('Copy');
         }, 300);
       }).append(e);
     })
