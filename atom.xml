@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sniu0320.com/"/>
-  <updated>2019-01-13T06:33:52.704Z</updated>
+  <updated>2019-01-16T14:24:40.722Z</updated>
   <id>https://sniu0320.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>报BUG是一门学问</title>
+    <link href="https://sniu0320.com/posts/c6a9b354.html"/>
+    <id>https://sniu0320.com/posts/c6a9b354.html</id>
+    <published>2019-01-16T14:13:48.000Z</published>
+    <updated>2019-01-16T14:24:40.722Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;相信大部分测试人员在报bug时，或多或少与开发的沟通存在些问题。如何更有效地说服开发接收你的bug？&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="https://sniu0320.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="软件测试" scheme="https://sniu0320.com/categories/%E5%B7%A5%E4%BD%9C/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="软件测试" scheme="https://sniu0320.com/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>2018年总结</title>
@@ -222,30 +246,6 @@
     
       &lt;blockquote&gt;
 &lt;p&gt;实现从设备操作日志中提取命令行信息、简化打印，便于查看、提高效率&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="学习" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="python" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/python/"/>
-    
-    
-      <category term="python" scheme="https://sniu0320.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python3安装</title>
-    <link href="https://sniu0320.com/posts/f95eec4f.html"/>
-    <id>https://sniu0320.com/posts/f95eec4f.html</id>
-    <published>2018-12-09T05:54:57.000Z</published>
-    <updated>2019-01-05T14:15:11.626Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;ubuntu、centos、macOS 以及 windows系统下的python3安装&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
