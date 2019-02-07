@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sniu0320.com/"/>
-  <updated>2019-01-16T14:24:40.722Z</updated>
+  <updated>2019-02-07T15:40:25.422Z</updated>
   <id>https://sniu0320.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python脚本:解析设备的cmdlog日志，提取时间信息和命令行</title>
+    <link href="https://sniu0320.com/posts/f77f63.html"/>
+    <id>https://sniu0320.com/posts/f77f63.html</id>
+    <published>2019-02-07T15:13:40.000Z</published>
+    <updated>2019-02-07T15:40:25.422Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;解析设备的cmdlog日志，提取时间信息和命令行&lt;br&gt;处理前：&lt;br&gt;&lt;img src=&quot;/media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-07%20%E4%B8%8B%E5%8D%8811.30.17.png&quot; alt=&quot;屏幕快照 2019-02-07 下午11.30.17&quot;&gt;&lt;br&gt;处理后：&lt;br&gt;&lt;img src=&quot;/media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-07%20%E4%B8%8B%E5%8D%8811.25.07.png&quot; alt=&quot;屏幕快照 2019-02-07 下午11.25.07&quot;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="python" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/python/"/>
+    
+    
+      <category term="python" scheme="https://sniu0320.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>报BUG是一门学问</title>
@@ -218,7 +242,7 @@
     <link href="https://sniu0320.com/posts/d47303b5.html"/>
     <id>https://sniu0320.com/posts/d47303b5.html</id>
     <published>2018-12-15T12:14:58.000Z</published>
-    <updated>2019-01-09T23:19:19.631Z</updated>
+    <updated>2019-02-02T14:14:27.972Z</updated>
     
     <summary type="html">
     
@@ -234,30 +258,6 @@
     
     
       <category term="linux" scheme="https://sniu0320.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python脚本:处理日志文件</title>
-    <link href="https://sniu0320.com/posts/f77f63.html"/>
-    <id>https://sniu0320.com/posts/f77f63.html</id>
-    <published>2018-12-14T12:13:40.000Z</published>
-    <updated>2019-01-03T14:35:58.064Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;实现从设备操作日志中提取命令行信息、简化打印，便于查看、提高效率&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="学习" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="python" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/python/"/>
-    
-    
-      <category term="python" scheme="https://sniu0320.com/tags/python/"/>
     
   </entry>
   
