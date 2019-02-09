@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sniu0320.com/"/>
-  <updated>2019-02-08T15:21:28.557Z</updated>
+  <updated>2019-02-09T15:38:35.064Z</updated>
   <id>https://sniu0320.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python脚本:通过sftp获取远端设备指定目录文件</title>
+    <link href="https://sniu0320.com/posts/4c1d8079.html"/>
+    <id>https://sniu0320.com/posts/4c1d8079.html</id>
+    <published>2019-02-09T15:25:53.000Z</published>
+    <updated>2019-02-09T15:38:35.064Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;通过sftp获取远端设备指定目录文件到本地，需要远端设备开启ssh&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="python" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/python/"/>
+    
+    
+      <category term="python" scheme="https://sniu0320.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>python脚本:解析设备的cmdlog日志，提取时间信息和命令行</title>
@@ -224,30 +248,6 @@
     
       &lt;blockquote&gt;
 &lt;p&gt;Gate One is an HTML5-powered terminal emulator and SSH client&lt;br&gt;&lt;a href=&quot;https://github.com/liftoff/GateOne&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官网 https://github.com/liftoff/GateOne&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="学习" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="linux" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/linux/"/>
-    
-    
-      <category term="linux" scheme="https://sniu0320.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS7部署Nginx</title>
-    <link href="https://sniu0320.com/posts/d47303b5.html"/>
-    <id>https://sniu0320.com/posts/d47303b5.html</id>
-    <published>2018-12-15T12:14:58.000Z</published>
-    <updated>2019-02-02T14:14:27.972Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
