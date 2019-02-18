@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sniu0320.com/"/>
-  <updated>2019-02-09T15:38:35.064Z</updated>
+  <updated>2019-02-18T00:02:08.960Z</updated>
   <id>https://sniu0320.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python脚本:提取show信息回显到excel</title>
+    <link href="https://sniu0320.com/posts/80316107.html"/>
+    <id>https://sniu0320.com/posts/80316107.html</id>
+    <published>2019-02-18T00:01:01.000Z</published>
+    <updated>2019-02-18T00:02:08.960Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="python" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>python脚本:通过sftp获取远端设备指定目录文件</title>
     <link href="https://sniu0320.com/posts/4c1d8079.html"/>
     <id>https://sniu0320.com/posts/4c1d8079.html</id>
     <published>2019-02-09T15:25:53.000Z</published>
-    <updated>2019-02-09T15:38:35.064Z</updated>
+    <updated>2019-02-17T23:59:08.317Z</updated>
     
     <summary type="html">
     
@@ -234,30 +260,6 @@
     
     
       <category term="随笔" scheme="https://sniu0320.com/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS7部署GateOne</title>
-    <link href="https://sniu0320.com/posts/aa509fdc.html"/>
-    <id>https://sniu0320.com/posts/aa509fdc.html</id>
-    <published>2018-12-15T15:25:05.000Z</published>
-    <updated>2019-01-09T23:19:58.533Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Gate One is an HTML5-powered terminal emulator and SSH client&lt;br&gt;&lt;a href=&quot;https://github.com/liftoff/GateOne&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官网 https://github.com/liftoff/GateOne&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="学习" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="linux" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/linux/"/>
-    
-    
-      <category term="linux" scheme="https://sniu0320.com/tags/linux/"/>
     
   </entry>
   
