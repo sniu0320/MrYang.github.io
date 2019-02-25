@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sniu0320.com/"/>
-  <updated>2019-02-22T17:18:29.147Z</updated>
+  <updated>2019-02-25T14:50:05.425Z</updated>
   <id>https://sniu0320.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>python脚本:提取show信息回显到excel</title>
-    <link href="https://sniu0320.com/posts/80316107.html"/>
-    <id>https://sniu0320.com/posts/80316107.html</id>
-    <published>2019-02-18T00:01:01.000Z</published>
-    <updated>2019-02-22T17:18:29.147Z</updated>
+    <title>python脚本:ping检测</title>
+    <link href="https://sniu0320.com/posts/b2fe6e5c.html"/>
+    <id>https://sniu0320.com/posts/b2fe6e5c.html</id>
+    <published>2019-02-25T14:47:13.000Z</published>
+    <updated>2019-02-25T14:50:05.425Z</updated>
     
     <summary type="html">
     
@@ -39,6 +39,36 @@
     
       <category term="python" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/python/"/>
     
+    
+      <category term="python" scheme="https://sniu0320.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python脚本:提取show信息回显到excel</title>
+    <link href="https://sniu0320.com/posts/80316107.html"/>
+    <id>https://sniu0320.com/posts/80316107.html</id>
+    <published>2019-02-18T00:01:01.000Z</published>
+    <updated>2019-02-25T14:47:41.300Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="python" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/python/"/>
+    
+    
+      <category term="python" scheme="https://sniu0320.com/tags/python/"/>
     
   </entry>
   
@@ -236,30 +266,6 @@
     
     
       <category term="linux" scheme="https://sniu0320.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>[转载]真正厉害的人，早已戒掉了情绪</title>
-    <link href="https://sniu0320.com/posts/22da46cf.html"/>
-    <id>https://sniu0320.com/posts/22da46cf.html</id>
-    <published>2018-12-20T15:13:37.000Z</published>
-    <updated>2019-01-03T14:35:16.289Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;戒掉情绪，你就成功了一半。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="生活" scheme="https://sniu0320.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-      <category term="随笔" scheme="https://sniu0320.com/categories/%E7%94%9F%E6%B4%BB/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="随笔" scheme="https://sniu0320.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
