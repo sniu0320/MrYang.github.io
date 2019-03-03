@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sniu0320.com/"/>
-  <updated>2019-02-25T14:50:05.425Z</updated>
+  <updated>2019-02-25T14:52:25.467Z</updated>
   <id>https://sniu0320.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>python脚本:ping检测</title>
-    <link href="https://sniu0320.com/posts/b2fe6e5c.html"/>
-    <id>https://sniu0320.com/posts/b2fe6e5c.html</id>
+    <link href="https://sniu0320.com/posts/b2fe6e5c/"/>
+    <id>https://sniu0320.com/posts/b2fe6e5c/</id>
     <published>2019-02-25T14:47:13.000Z</published>
-    <updated>2019-02-25T14:50:05.425Z</updated>
+    <updated>2019-02-25T14:52:25.467Z</updated>
     
     <summary type="html">
     
@@ -46,8 +46,8 @@
   
   <entry>
     <title>python脚本:提取show信息回显到excel</title>
-    <link href="https://sniu0320.com/posts/80316107.html"/>
-    <id>https://sniu0320.com/posts/80316107.html</id>
+    <link href="https://sniu0320.com/posts/80316107/"/>
+    <id>https://sniu0320.com/posts/80316107/</id>
     <published>2019-02-18T00:01:01.000Z</published>
     <updated>2019-02-25T14:47:41.300Z</updated>
     
@@ -74,8 +74,8 @@
   
   <entry>
     <title>python脚本:通过sftp获取远端设备指定目录文件</title>
-    <link href="https://sniu0320.com/posts/4c1d8079.html"/>
-    <id>https://sniu0320.com/posts/4c1d8079.html</id>
+    <link href="https://sniu0320.com/posts/4c1d8079/"/>
+    <id>https://sniu0320.com/posts/4c1d8079/</id>
     <published>2019-02-09T15:25:53.000Z</published>
     <updated>2019-02-17T23:59:08.317Z</updated>
     
@@ -98,10 +98,10 @@
   
   <entry>
     <title>python脚本:解析设备的cmdlog日志，提取时间信息和命令行</title>
-    <link href="https://sniu0320.com/posts/4ddc4922.html"/>
-    <id>https://sniu0320.com/posts/4ddc4922.html</id>
+    <link href="https://sniu0320.com/posts/4ddc4922/"/>
+    <id>https://sniu0320.com/posts/4ddc4922/</id>
     <published>2019-02-07T15:50:36.000Z</published>
-    <updated>2019-02-08T15:21:28.557Z</updated>
+    <updated>2019-02-26T14:59:17.840Z</updated>
     
     <summary type="html">
     
@@ -122,8 +122,8 @@
   
   <entry>
     <title>报BUG是一门学问</title>
-    <link href="https://sniu0320.com/posts/c6a9b354.html"/>
-    <id>https://sniu0320.com/posts/c6a9b354.html</id>
+    <link href="https://sniu0320.com/posts/c6a9b354/"/>
+    <id>https://sniu0320.com/posts/c6a9b354/</id>
     <published>2019-01-16T14:13:48.000Z</published>
     <updated>2019-01-16T14:24:40.722Z</updated>
     
@@ -146,8 +146,8 @@
   
   <entry>
     <title>2018年总结</title>
-    <link href="https://sniu0320.com/posts/fa88ee57.html"/>
-    <id>https://sniu0320.com/posts/fa88ee57.html</id>
+    <link href="https://sniu0320.com/posts/fa88ee57/"/>
+    <id>https://sniu0320.com/posts/fa88ee57/</id>
     <published>2018-12-29T13:27:18.000Z</published>
     <updated>2019-01-20T14:49:07.362Z</updated>
     
@@ -173,8 +173,8 @@
   
   <entry>
     <title>【转载】提升产品质量-需求质量</title>
-    <link href="https://sniu0320.com/posts/aaafd623.html"/>
-    <id>https://sniu0320.com/posts/aaafd623.html</id>
+    <link href="https://sniu0320.com/posts/aaafd623/"/>
+    <id>https://sniu0320.com/posts/aaafd623/</id>
     <published>2018-12-27T22:38:35.000Z</published>
     <updated>2019-01-20T14:49:07.377Z</updated>
     
@@ -203,8 +203,8 @@
   
   <entry>
     <title>python小程序</title>
-    <link href="https://sniu0320.com/posts/a8e44310.html"/>
-    <id>https://sniu0320.com/posts/a8e44310.html</id>
+    <link href="https://sniu0320.com/posts/a8e44310/"/>
+    <id>https://sniu0320.com/posts/a8e44310/</id>
     <published>2018-12-26T15:26:57.000Z</published>
     <updated>2019-01-20T14:49:07.412Z</updated>
     
@@ -225,8 +225,8 @@
   
   <entry>
     <title>做一名优秀的软件测试工程师</title>
-    <link href="https://sniu0320.com/posts/74c7bf03.html"/>
-    <id>https://sniu0320.com/posts/74c7bf03.html</id>
+    <link href="https://sniu0320.com/posts/74c7bf03/"/>
+    <id>https://sniu0320.com/posts/74c7bf03/</id>
     <published>2018-12-25T14:55:40.000Z</published>
     <updated>2019-01-20T14:49:07.387Z</updated>
     
@@ -247,8 +247,8 @@
   
   <entry>
     <title>linux笔记</title>
-    <link href="https://sniu0320.com/posts/9d87f16a.html"/>
-    <id>https://sniu0320.com/posts/9d87f16a.html</id>
+    <link href="https://sniu0320.com/posts/9d87f16a/"/>
+    <id>https://sniu0320.com/posts/9d87f16a/</id>
     <published>2018-12-21T14:47:26.000Z</published>
     <updated>2019-01-13T06:22:45.689Z</updated>
     
