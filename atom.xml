@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sniu0320.com/"/>
-  <updated>2019-02-25T14:52:25.467Z</updated>
+  <updated>2019-03-03T13:46:23.894Z</updated>
   <id>https://sniu0320.com/</id>
   
   <author>
@@ -17,21 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>python脚本:ping检测</title>
-    <link href="https://sniu0320.com/posts/b2fe6e5c/"/>
-    <id>https://sniu0320.com/posts/b2fe6e5c/</id>
+    <title>python脚本-解析show命令行日志，提取关键信息</title>
+    <link href="https://sniu0320.com/posts/5d80751e.html"/>
+    <id>https://sniu0320.com/posts/5d80751e.html</id>
+    <published>2019-03-03T13:34:32.000Z</published>
+    <updated>2019-03-03T13:46:23.894Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;读取设备命令行log记录，提取关键信息输出到excel&lt;br&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="python" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/python/"/>
+    
+    
+      <category term="python" scheme="https://sniu0320.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python脚本-ping检测</title>
+    <link href="https://sniu0320.com/posts/b2fe6e5c.html"/>
+    <id>https://sniu0320.com/posts/b2fe6e5c.html</id>
     <published>2019-02-25T14:47:13.000Z</published>
-    <updated>2019-02-25T14:52:25.467Z</updated>
+    <updated>2019-03-03T13:28:59.151Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
+      &lt;p&gt;对列表中ip依次进行ping测试，提取ping失败的ip并记录时间&lt;br&gt;可用于监测网络情况，例如三层网络进行逐跳ping测试&lt;/p&gt;
     
     </summary>
     
@@ -45,45 +61,15 @@
   </entry>
   
   <entry>
-    <title>python脚本:提取show信息回显到excel</title>
-    <link href="https://sniu0320.com/posts/80316107/"/>
-    <id>https://sniu0320.com/posts/80316107/</id>
-    <published>2019-02-18T00:01:01.000Z</published>
-    <updated>2019-02-25T14:47:41.300Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-      <category term="学习" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="python" scheme="https://sniu0320.com/categories/%E5%AD%A6%E4%B9%A0/python/"/>
-    
-    
-      <category term="python" scheme="https://sniu0320.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python脚本:通过sftp获取远端设备指定目录文件</title>
-    <link href="https://sniu0320.com/posts/4c1d8079/"/>
-    <id>https://sniu0320.com/posts/4c1d8079/</id>
+    <title>python脚本-通过sftp获取远端设备指定目录文件</title>
+    <link href="https://sniu0320.com/posts/4c1d8079.html"/>
+    <id>https://sniu0320.com/posts/4c1d8079.html</id>
     <published>2019-02-09T15:25:53.000Z</published>
-    <updated>2019-02-17T23:59:08.317Z</updated>
+    <updated>2019-03-03T13:28:58.422Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;通过sftp获取远端设备指定目录文件到本地，需要远端设备开启ssh&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;p&gt;通过sftp获取远端设备指定目录文件到本地，需要远端设备开启ssh&lt;/p&gt;
     
     </summary>
     
@@ -97,17 +83,15 @@
   </entry>
   
   <entry>
-    <title>python脚本:解析设备的cmdlog日志，提取时间信息和命令行</title>
-    <link href="https://sniu0320.com/posts/4ddc4922/"/>
-    <id>https://sniu0320.com/posts/4ddc4922/</id>
+    <title>python脚本-解析设备的cmdlog日志，提取时间信息和命令行</title>
+    <link href="https://sniu0320.com/posts/4ddc4922.html"/>
+    <id>https://sniu0320.com/posts/4ddc4922.html</id>
     <published>2019-02-07T15:50:36.000Z</published>
-    <updated>2019-02-26T14:59:17.840Z</updated>
+    <updated>2019-03-03T13:28:58.026Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;解析设备的cmdlog日志，提取时间信息和命令行&lt;br&gt;处理前：&lt;br&gt;&lt;img src=&quot;/media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-07%20%E4%B8%8B%E5%8D%8811.30.17.png&quot; alt=&quot;屏幕快照 2019-02-07 下午11.30.17&quot;&gt;&lt;br&gt;处理后：&lt;br&gt;&lt;img src=&quot;/media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-07%20%E4%B8%8B%E5%8D%8811.25.07.png&quot; alt=&quot;屏幕快照 2019-02-07 下午11.25.07&quot;&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;p&gt;解析设备的cmdlog日志，提取时间信息和命令行&lt;br&gt;处理前：&lt;br&gt;&lt;img src=&quot;/media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-07%20%E4%B8%8B%E5%8D%8811.30.17.png&quot; alt=&quot;屏幕快照 2019-02-07 下午11.30.17&quot;&gt;&lt;br&gt;处理后：&lt;br&gt;&lt;img src=&quot;/media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-07%20%E4%B8%8B%E5%8D%8811.25.07.png&quot; alt=&quot;屏幕快照 2019-02-07 下午11.25.07&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -122,8 +106,8 @@
   
   <entry>
     <title>报BUG是一门学问</title>
-    <link href="https://sniu0320.com/posts/c6a9b354/"/>
-    <id>https://sniu0320.com/posts/c6a9b354/</id>
+    <link href="https://sniu0320.com/posts/c6a9b354.html"/>
+    <id>https://sniu0320.com/posts/c6a9b354.html</id>
     <published>2019-01-16T14:13:48.000Z</published>
     <updated>2019-01-16T14:24:40.722Z</updated>
     
@@ -146,8 +130,8 @@
   
   <entry>
     <title>2018年总结</title>
-    <link href="https://sniu0320.com/posts/fa88ee57/"/>
-    <id>https://sniu0320.com/posts/fa88ee57/</id>
+    <link href="https://sniu0320.com/posts/fa88ee57.html"/>
+    <id>https://sniu0320.com/posts/fa88ee57.html</id>
     <published>2018-12-29T13:27:18.000Z</published>
     <updated>2019-01-20T14:49:07.362Z</updated>
     
@@ -173,8 +157,8 @@
   
   <entry>
     <title>【转载】提升产品质量-需求质量</title>
-    <link href="https://sniu0320.com/posts/aaafd623/"/>
-    <id>https://sniu0320.com/posts/aaafd623/</id>
+    <link href="https://sniu0320.com/posts/aaafd623.html"/>
+    <id>https://sniu0320.com/posts/aaafd623.html</id>
     <published>2018-12-27T22:38:35.000Z</published>
     <updated>2019-01-20T14:49:07.377Z</updated>
     
@@ -203,8 +187,8 @@
   
   <entry>
     <title>python小程序</title>
-    <link href="https://sniu0320.com/posts/a8e44310/"/>
-    <id>https://sniu0320.com/posts/a8e44310/</id>
+    <link href="https://sniu0320.com/posts/a8e44310.html"/>
+    <id>https://sniu0320.com/posts/a8e44310.html</id>
     <published>2018-12-26T15:26:57.000Z</published>
     <updated>2019-01-20T14:49:07.412Z</updated>
     
@@ -225,8 +209,8 @@
   
   <entry>
     <title>做一名优秀的软件测试工程师</title>
-    <link href="https://sniu0320.com/posts/74c7bf03/"/>
-    <id>https://sniu0320.com/posts/74c7bf03/</id>
+    <link href="https://sniu0320.com/posts/74c7bf03.html"/>
+    <id>https://sniu0320.com/posts/74c7bf03.html</id>
     <published>2018-12-25T14:55:40.000Z</published>
     <updated>2019-01-20T14:49:07.387Z</updated>
     
@@ -247,8 +231,8 @@
   
   <entry>
     <title>linux笔记</title>
-    <link href="https://sniu0320.com/posts/9d87f16a/"/>
-    <id>https://sniu0320.com/posts/9d87f16a/</id>
+    <link href="https://sniu0320.com/posts/9d87f16a.html"/>
+    <id>https://sniu0320.com/posts/9d87f16a.html</id>
     <published>2018-12-21T14:47:26.000Z</published>
     <updated>2019-01-13T06:22:45.689Z</updated>
     

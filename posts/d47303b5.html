@@ -107,18 +107,18 @@
 
 
 
-  <meta name="description" content="2018年总结工作 上半年瞎忙缺少思考，下半年很忙很累很烦 尝试使用工具禅道进行任务跟踪和工程故障跟踪，因9月份攻关，没有坚持下来 尝试配对测试，对进度影响不大但对质量提升有效果 抓关键任务，要求修改方案提前传递并组织答疑会，开发和测试在答疑的同时确认关键修改和风险点 工程故障接口人做的很痛苦，有时候真叫不动人 最近一段时间工作经常出现情绪问题，影响工作效率">
-<meta name="keywords" content="工作">
+  <meta name="description" content="Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。">
+<meta name="keywords" content="linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2018年总结">
-<meta property="og:url" content="https://sniu0320.com/posts/fa88ee57/index.html">
+<meta property="og:title" content="CentOS7部署Nginx">
+<meta property="og:url" content="https://sniu0320.com/posts/d47303b5.html">
 <meta property="og:site_name" content="Mr.Yang&#39;s Blog">
-<meta property="og:description" content="2018年总结工作 上半年瞎忙缺少思考，下半年很忙很累很烦 尝试使用工具禅道进行任务跟踪和工程故障跟踪，因9月份攻关，没有坚持下来 尝试配对测试，对进度影响不大但对质量提升有效果 抓关键任务，要求修改方案提前传递并组织答疑会，开发和测试在答疑的同时确认关键修改和风险点 工程故障接口人做的很痛苦，有时候真叫不动人 最近一段时间工作经常出现情绪问题，影响工作效率">
+<meta property="og:description" content="Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-20T14:49:07.362Z">
+<meta property="og:updated_time" content="2019-02-02T14:14:27.972Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2018年总结">
-<meta name="twitter:description" content="2018年总结工作 上半年瞎忙缺少思考，下半年很忙很累很烦 尝试使用工具禅道进行任务跟踪和工程故障跟踪，因9月份攻关，没有坚持下来 尝试配对测试，对进度影响不大但对质量提升有效果 抓关键任务，要求修改方案提前传递并组织答疑会，开发和测试在答疑的同时确认关键修改和风险点 工程故障接口人做的很痛苦，有时候真叫不动人 最近一段时间工作经常出现情绪问题，影响工作效率">
+<meta name="twitter:title" content="CentOS7部署Nginx">
+<meta name="twitter:description" content="Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="https://sniu0320.com/posts/fa88ee57/">
+  <link rel="canonical" href="https://sniu0320.com/posts/d47303b5.html">
 
 
 
@@ -137,7 +137,7 @@
   };
 </script>
 
-  <title>2018年总结 | Mr.Yang's Blog</title>
+  <title>CentOS7部署Nginx | Mr.Yang's Blog</title>
   
 
 
@@ -407,7 +407,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/fa88ee57/">
+    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/d47303b5.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Yang">
@@ -424,7 +424,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">2018年总结
+          <h2 class="post-title" itemprop="name headline">CentOS7部署Nginx
 
               
             
@@ -450,7 +450,7 @@
                 
               
 
-              <time title="创建时间：2018-12-29 21:27:18" itemprop="dateCreated datePublished" datetime="2018-12-29T21:27:18+08:00">2018-12-29</time>
+              <time title="创建时间：2018-12-15 20:14:58" itemprop="dateCreated datePublished" datetime="2018-12-15T20:14:58+08:00">2018-12-15</time>
             
 
             
@@ -467,7 +467,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-20 22:49:07" itemprop="dateModified" datetime="2019-01-20T22:49:07+08:00">2019-01-20</time>
+                <time title="修改时间：2019-02-02 22:14:27" itemprop="dateModified" datetime="2019-02-02T22:14:27+08:00">2019-02-02</time>
               
             
           </span>
@@ -484,7 +484,14 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/工作/" itemprop="url" rel="index"><span itemprop="name">工作</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/学习/" itemprop="url" rel="index"><span itemprop="name">学习</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/学习/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a></span>
 
                 
                 
@@ -525,73 +532,39 @@
       
 
       
-        <h1 id="2018年总结"><a href="#2018年总结" class="headerlink" title="2018年总结"></a>2018年总结</h1><h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><ul>
-<li>上半年瞎忙缺少思考，下半年很忙很累很烦</li>
-<li>尝试使用工具<strong>禅道</strong>进行任务跟踪和工程故障跟踪，因9月份攻关，没有坚持下来</li>
-<li>尝试配对测试，对进度影响不大但对质量提升有效果</li>
-<li>抓关键任务，要求修改方案提前传递并组织答疑会，开发和测试在答疑的同时确认关键修改和风险点</li>
-<li>工程故障接口人做的很痛苦，有时候真叫不动人</li>
-<li>最近一段时间工作经常出现情绪问题，影响工作效率</li>
-</ul>
+        <blockquote>
+<p>Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。</p>
+</blockquote>
 <a id="more"></a>
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><ul>
-<li><p>学习使用python，并应用到工作中</p>
-<ul>
-<li><p>完成脚本1：对设备的操作日志进行处理，提取关键信息，提高故障分析/复现效率</p>
-</li>
-<li><p>完成脚本2：ssh设备后提取设备关键log</p>
-</li>
-<li><p>完成脚本3：通过snmp获取设备信息，检索在线单板，输出到excel</p>
-</li>
-<li><p>完成脚本4：实现shell功能，支持ssh设备并自动记录回显信息输出到日志文件</p>
-<blockquote>
-<p>测试工作任重道远，功能实现固然重要，异常保护同样不能马虎</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>接触markdown，开始写技术笔记</p>
-<ul>
-<li>有道云、Typora、ulysses、bear、Mweb、印象笔记 各种笔记软件折腾了一圈</li>
-</ul>
-</li>
-<li><p>买了2年阿里云，用来学习linux和折腾</p>
-<ul>
-<li>部署了GateOne，Nginx</li>
-<li>学习Flask 框架、html、css 写个人博客网站(断断续续最终夭折)，改为博客工具hexo</li>
-</ul>
-</li>
-<li><p>双11买了好几本python、linux、html/css相关书籍，看的太慢</p>
-<p>12月开始每天睡前、早起1小时学习</p>
-</li>
-</ul>
-<h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><ul>
-<li>乒乓<ul>
-<li>忙于工作，没有组织协会的活动，对不起兄弟们</li>
-<li>小伙伴离职后一直都没有打球，缺少锻炼</li>
-</ul>
-</li>
-<li>将工作情绪带回了家，尤其是下半年，这样不好</li>
-<li>加班太多了，陪老婆孩子的时间太少</li>
-<li>因为孩子的教育和媳妇吵架</li>
-<li>最近很少下厨房做饭了，懒了</li>
-</ul>
-<h1 id="2019年展望"><a href="#2019年展望" class="headerlink" title="2019年展望"></a>2019年展望</h1><ul>
-<li>python、博客要坚持下去，要注重积累</li>
-<li>工作生活要有界限，提高工作效率，早下班陪家人</li>
-<li>带家人出去旅游一次</li>
-<li>多锻炼、控制情绪，注意身体健康</li>
-<li>抗住压力、改进方法，服务团队专心做好工作</li>
-</ul>
-<blockquote>
-<p>不管是学习，工作，还是生活，都应该在平时养成总结的习惯，至少不会在年总结什么的时候六神无主<br>有始有终，学习如此，做人亦如此<br>做个有耐心的人，不急不燥，对父母多点耐心，对公婆多点耐心，对老婆孩子多点耐心<br>自信一点，相信自己的能力，遇到挫折想办法解决</p>
-</blockquote>
-
+<h2 id="1-安装依赖包"><a href="#1-安装依赖包" class="headerlink" title="1.安装依赖包"></a>1.安装依赖包</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum install openssl <span class="comment">#安装openssl库</span></span><br><span class="line">yum install zlib <span class="comment">#安装zlib库</span></span><br><span class="line">yum install pcre <span class="comment">#安装pcre库</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-安装Nginx依赖项和Nginx"><a href="#2-安装Nginx依赖项和Nginx" class="headerlink" title="2.安装Nginx依赖项和Nginx"></a>2.安装Nginx依赖项和Nginx</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -Uvh http://nginx.org/packages/centos/<span class="number">7</span>/noarch/RPMS/nginx-release-centos<span class="number">-7</span><span class="number">-0.</span>el7.ngx.noarch.rpm </span><br><span class="line">yum install nginx</span><br></pre></td></tr></table></figure>
+<h2 id="3-启动Nginx"><a href="#3-启动Nginx" class="headerlink" title="3.启动Nginx"></a>3.启动Nginx</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">service nginx start <span class="comment">#启动Nginx</span></span><br><span class="line">service nginx restart <span class="comment">#重启Nginx</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-配置开机启动"><a href="#4-配置开机启动" class="headerlink" title="4.配置开机启动"></a>4.配置开机启动</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#sysVinit方式</span></span><br><span class="line">chmod +x /etc/rc.d/rc.local</span><br><span class="line">vim /etc/rc.d/rc.local</span><br><span class="line">添加 service nginx start</span><br><span class="line"><span class="comment">#systemd方式</span></span><br><span class="line">systemctl enable nginx.service</span><br></pre></td></tr></table></figure>
+<h2 id="5-配置config"><a href="#5-配置config" class="headerlink" title="5.配置config"></a>5.配置config</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/nginx/conf.d/default.conf</span><br><span class="line"> </span><br><span class="line">server &#123;</span><br><span class="line">    listen       <span class="number">80</span>;</span><br><span class="line">    server_name  <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>;</span><br><span class="line">    root /root/web/blog; <span class="comment">#nginx的根目录默认/usr/share/nginx/html/下，修改访问目录</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#charset koi8-r;</span></span><br><span class="line">    <span class="comment">#access_log  /var/log/nginx/host.access.log  main;</span></span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        root   /root/web/blog; <span class="comment">#修改访问目录</span></span><br><span class="line">        index  index.html index.htm;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">#error_page  404              /404.html;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># redirect server error pages to the static page /50x.html</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    error_page   <span class="number">500</span> <span class="number">502</span> <span class="number">503</span> <span class="number">504</span>  /<span class="number">50</span>x.html;</span><br><span class="line">    location = /<span class="number">50</span>x.html &#123;</span><br><span class="line">        root   /root/web/blog; <span class="comment">#修改访问目录</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># proxy the PHP scripts to Apache listening on 127.0.0.1:80</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment">#location ~ \.php$ &#123;</span></span><br><span class="line">    <span class="comment">#    proxy_pass   http://127.0.0.1;</span></span><br><span class="line">    <span class="comment">#&#125;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment">#location ~ \.php$ &#123;</span></span><br><span class="line">    <span class="comment">#    root           html;</span></span><br><span class="line">    <span class="comment">#    fastcgi_pass   127.0.0.1:9000;</span></span><br><span class="line">    <span class="comment">#    fastcgi_index  index.php;</span></span><br><span class="line">    <span class="comment">#    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span></span><br><span class="line">    <span class="comment">#    include        fastcgi_params;</span></span><br><span class="line">    <span class="comment">#&#125;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># deny access to .htaccess files, if Apache's document root</span></span><br><span class="line">    <span class="comment"># concurs with nginx's one</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment">#location ~ /\.ht &#123;</span></span><br><span class="line">    <span class="comment">#    deny  all;</span></span><br><span class="line">    <span class="comment">#&#125;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
     
       
+
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="popular-posts">
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/posts/aa509fdc.html" rel="bookmark">CentOS7部署GateOne</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/posts/9d87f16a.html" rel="bookmark">linux笔记</a></div>
+      
+    </li>
+  
+  </ul>
 
 
     
@@ -623,7 +596,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://sniu0320.com/posts/fa88ee57/" title="2018年总结">https://sniu0320.com/posts/fa88ee57/</a>
+    <a href="https://sniu0320.com/posts/d47303b5.html" title="CentOS7部署Nginx">https://sniu0320.com/posts/d47303b5.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -636,7 +609,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/工作/" rel="tag"># 工作</a>
+            <a href="/tags/linux/" rel="tag"># linux</a>
           
         </div>
       
@@ -649,8 +622,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/posts/aaafd623/" rel="next" title="【转载】提升产品质量-需求质量">
-                <i class="fa fa-chevron-left"></i> 【转载】提升产品质量-需求质量
+              <a href="/posts/f95eec4f.html" rel="next" title="python3安装">
+                <i class="fa fa-chevron-left"></i> python3安装
               </a>
             
           </div>
@@ -659,8 +632,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/posts/c6a9b354/" rel="prev" title="报BUG是一门学问">
-                报BUG是一门学问 <i class="fa fa-chevron-right"></i>
+              <a href="/posts/aa509fdc.html" rel="prev" title="CentOS7部署GateOne">
+                CentOS7部署GateOne <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -863,7 +836,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2018年总结"><span class="nav-text">2018年总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#工作"><span class="nav-text">工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#学习"><span class="nav-text">学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生活"><span class="nav-text">生活</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2019年展望"><span class="nav-text">2019年展望</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装依赖包"><span class="nav-text">1.安装依赖包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装Nginx依赖项和Nginx"><span class="nav-text">2.安装Nginx依赖项和Nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-启动Nginx"><span class="nav-text">3.启动Nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-配置开机启动"><span class="nav-text">4.配置开机启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-配置config"><span class="nav-text">5.配置config</span></a></li></ol></div>
             
 
           </div>

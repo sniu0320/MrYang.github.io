@@ -401,7 +401,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/b2fe6e5c/">
+    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/5d80751e.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Yang">
@@ -421,7 +421,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/posts/b2fe6e5c/" class="post-title-link" itemprop="url">python脚本:ping检测</a>
+                <a href="/posts/5d80751e.html" class="post-title-link" itemprop="url">python脚本-解析show命令行日志，提取关键信息</a>
               
             
           </h2>
@@ -446,7 +446,7 @@
                 
               
 
-              <time title="创建时间：2019-02-25 22:47:13 / 修改时间：22:52:25" itemprop="dateCreated datePublished" datetime="2019-02-25T22:47:13+08:00">2019-02-25</time>
+              <time title="创建时间：2019-03-03 21:34:32 / 修改时间：21:46:23" itemprop="dateCreated datePublished" datetime="2019-03-03T21:34:32+08:00">2019-03-03</time>
             
 
             
@@ -510,13 +510,19 @@
 
       
         
+          <p>读取设备命令行log记录，提取关键信息输出到excel<br>
+          <!--noindex-->
           
-            <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> platform</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">checkSys</span><span class="params">()</span>:</span></span><br><span class="line">    sysstr = platform.system()</span><br><span class="line">    <span class="keyword">return</span> sysstr</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">pingCheck</span><span class="params">(sysstr, ip)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> sysstr == <span class="string">"Windows"</span>:</span><br><span class="line">        result = os.system(<span class="string">'ping -n 1 -w 1000 &#123;&#125;'</span>.format(ip))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        result = os.system(<span class="string">'ping -c 1 -W 1 &#123;&#125;'</span>.format(ip))</span><br><span class="line">    <span class="keyword">if</span> result:</span><br><span class="line">        <span class="comment">#不通</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    print(<span class="string">"**** Welcome to use this pingCheck tool! ****"</span>)</span><br><span class="line">    system = checkSys()</span><br><span class="line">    <span class="comment">#print(system)</span></span><br><span class="line">    ips = [<span class="string">'172.11.3.120'</span>, <span class="string">'172.11.3.121'</span>]</span><br><span class="line">    print(<span class="string">"ips:"</span>, ips)</span><br><span class="line">    time_file = time.strftime(<span class="string">"%Y-%m-%d_%H-%M-%S"</span>, time.localtime())</span><br><span class="line">    file = <span class="string">"pingcheck_"</span> + time_file + <span class="string">".txt"</span></span><br><span class="line">    print(file)</span><br><span class="line">    <span class="keyword">with</span> open(file, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">            time_now = time.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>, time.localtime())</span><br><span class="line">            <span class="comment"># 0.1s 一次</span></span><br><span class="line">            time.sleep(<span class="number">0.1</span>)</span><br><span class="line">            <span class="keyword">for</span> ip <span class="keyword">in</span> ips:</span><br><span class="line">                result = pingCheck(system, ip)</span><br><span class="line">                <span class="keyword">if</span> result:</span><br><span class="line">                    <span class="keyword">pass</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    f.write(<span class="string">'ping &#123;&#125; fail at &#123;&#125; \n'</span>.format(ip, time_now))</span><br><span class="line">                    f.flush()</span><br></pre></td></tr></table></figure>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/posts/5d80751e.html" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
 
     
 
@@ -568,7 +574,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/80316107/">
+    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/b2fe6e5c.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Yang">
@@ -588,7 +594,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/posts/80316107/" class="post-title-link" itemprop="url">python脚本:提取show信息回显到excel</a>
+                <a href="/posts/b2fe6e5c.html" class="post-title-link" itemprop="url">python脚本-ping检测</a>
               
             
           </h2>
@@ -613,7 +619,7 @@
                 
               
 
-              <time title="创建时间：2019-02-18 08:01:01" itemprop="dateCreated datePublished" datetime="2019-02-18T08:01:01+08:00">2019-02-18</time>
+              <time title="创建时间：2019-02-25 22:47:13" itemprop="dateCreated datePublished" datetime="2019-02-25T22:47:13+08:00">2019-02-25</time>
             
 
             
@@ -630,7 +636,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-25 22:47:41" itemprop="dateModified" datetime="2019-02-25T22:47:41+08:00">2019-02-25</time>
+                <time title="修改时间：2019-03-03 21:28:59" itemprop="dateModified" datetime="2019-03-03T21:28:59+08:00">2019-03-03</time>
               
             
           </span>
@@ -689,9 +695,16 @@
 
       
         
+          <p>对列表中ip依次进行ping测试，提取ping失败的ip并记录时间<br>可用于监测网络情况，例如三层网络进行逐跳ping测试</p>
+          <!--noindex-->
           
-            <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">读取文件为字符串并按'#'分割为列表,获取各个命令行的回显,整理后写入excel中</span></span><br><span class="line"><span class="string">目前实现：show verison，获取单板信息</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> xlsxwriter</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">AttrDisplay</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    通用属性显示工具</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__gatherAttrs</span><span class="params">(self)</span>:</span> </span><br><span class="line">        <span class="comment">#加__ 伪私有类属性，防止子类有命名冲突，导致失效</span></span><br><span class="line">        attrs = []</span><br><span class="line">        <span class="comment">#for key in sorted(self.__dict__):</span></span><br><span class="line">        <span class="keyword">for</span> key <span class="keyword">in</span> self.__dict__:</span><br><span class="line">            <span class="comment">#attrs.append('&#123;&#125;=&#123;&#125;'.format(key, getattr(self, key)))</span></span><br><span class="line">            attrs.append(<span class="string">'&#123;&#125;'</span>.format(getattr(self, key)))</span><br><span class="line">        <span class="keyword">return</span> <span class="string">', '</span>.join(attrs)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">'[&#123;&#125;: &#123;&#125;]'</span>.format(self.__class__.__name__, self.__gatherAttrs())</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Board_info</span><span class="params">(AttrDisplay)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    单板信息</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, type_99=<span class="string">'NA'</span>, shelf=<span class="number">255</span>, slot=<span class="number">255</span>, boardname=<span class="string">'NA'</span>, processor=<span class="string">'NA'</span>,  memory=<span class="string">'NA'</span>, cpld=<span class="string">'NA'</span>, boot=<span class="string">'NA'</span>, </span></span></span><br><span class="line"><span class="function"><span class="params">        app=<span class="string">'NA'</span>)</span>:</span></span><br><span class="line">        <span class="comment">#构造函数</span></span><br><span class="line">        self.type_99 = type_99 <span class="comment">#MPU PFU SFU IPM FAN POWER IPMC</span></span><br><span class="line">        self.shelf = shelf <span class="comment">#机框 0/1</span></span><br><span class="line">        self.slot = slot <span class="comment">#槽位号</span></span><br><span class="line">        self.boardname = boardname <span class="comment">#单板名称</span></span><br><span class="line">        self.processor = processor <span class="comment">#处理器类型</span></span><br><span class="line">        self.memory = memory <span class="comment">#内存</span></span><br><span class="line">        self.cpld = cpld <span class="comment">#cpld版本</span></span><br><span class="line">        self.boot = boot <span class="comment">#boot版本</span></span><br><span class="line">        self.app = app <span class="comment">#监控的app版本</span></span><br><span class="line">    <span class="comment"># def __str__(self):</span></span><br><span class="line">    <span class="comment">#     #运算符重载</span></span><br><span class="line">    <span class="comment">#     return '[Board_info: &#123;&#125; &#123;&#125; &#123;&#125; &#123;&#125; &#123;&#125; &#123;&#125; &#123;&#125; &#123;&#125;]'.format(self.type_99, self.shelf, self.slot, self.boardname,</span></span><br><span class="line">    <span class="comment">#         self.processor, self.cpld, self.boot, self.app)</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">getBoardinfo</span><span class="params">(self, cmdstr)</span>:</span></span><br><span class="line">        <span class="string">'''</span></span><br><span class="line"><span class="string">        '''</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> cmdstr.split(<span class="string">'\n'</span>):</span><br><span class="line">            <span class="keyword">if</span> <span class="string">'['</span> <span class="keyword">in</span> i :</span><br><span class="line">                i = i.replace(<span class="string">'  '</span>,<span class="string">' '</span>) <span class="comment">#替换双空格的错误打印</span></span><br><span class="line">                <span class="comment">#print(i)</span></span><br><span class="line">                self.type_99 = i.split(<span class="string">' '</span>)[<span class="number">-6</span>].replace(<span class="string">'['</span>,<span class="string">''</span>)</span><br><span class="line">                self.shelf = i.split(<span class="string">' '</span>)[<span class="number">-3</span>]</span><br><span class="line">                self.slot = i.split(<span class="string">' '</span>)[<span class="number">-1</span>].replace(<span class="string">']'</span>,<span class="string">''</span>)</span><br><span class="line">            <span class="keyword">elif</span> <span class="string">'Board Name'</span> <span class="keyword">in</span> i:</span><br><span class="line">                self.boardname = i.split(<span class="string">': '</span>)[<span class="number">-1</span>]</span><br><span class="line">            <span class="keyword">elif</span> <span class="string">'processor'</span> <span class="keyword">in</span> i:</span><br><span class="line">                i = i.replace(<span class="string">'  '</span>,<span class="string">' '</span>) <span class="comment">#替换双空格的错误打印</span></span><br><span class="line">                <span class="keyword">if</span> len(i.split(<span class="string">' '</span>)) &gt; <span class="number">4</span>:</span><br><span class="line">                    self.processor = i.split(<span class="string">' '</span>)[<span class="number">-2</span>]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    self.processor = i.split(<span class="string">' '</span>)[<span class="number">-1</span>] <span class="comment">#监控</span></span><br><span class="line">            <span class="keyword">elif</span> <span class="string">'CPLD Version'</span> <span class="keyword">in</span> i:</span><br><span class="line">                self.cpld = i.split(<span class="string">': '</span>)[<span class="number">-1</span>]</span><br><span class="line">            <span class="keyword">elif</span> <span class="string">'Bootrom Version'</span> <span class="keyword">in</span> i:</span><br><span class="line">                self.boot = i.split(<span class="string">': '</span>)[<span class="number">-1</span>]</span><br><span class="line">            <span class="keyword">elif</span> <span class="string">'App Version'</span> <span class="keyword">in</span> i:</span><br><span class="line">                self.app = i.split(<span class="string">': '</span>)[<span class="number">-1</span>]</span><br><span class="line">            <span class="keyword">elif</span> <span class="string">'Memory'</span> <span class="keyword">in</span> i:</span><br><span class="line">                self.memory = i.split(<span class="string">' '</span>)[<span class="number">-2</span>]+<span class="string">'M'</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">boardinfo_attrs</span><span class="params">(self)</span>:</span></span><br><span class="line">        attrs = [] <span class="comment">#取值</span></span><br><span class="line">        <span class="keyword">for</span> key <span class="keyword">in</span> self.__dict__:</span><br><span class="line">            attrs.append(<span class="string">'&#123;&#125;'</span>.format(getattr(self, key)))</span><br><span class="line">        <span class="keyword">return</span> attrs</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">boardinfo_title</span><span class="params">(self)</span>:</span></span><br><span class="line">        title = [] <span class="comment">#取key</span></span><br><span class="line">        <span class="keyword">for</span> key <span class="keyword">in</span> self.__dict__:</span><br><span class="line">            title.append(<span class="string">'&#123;&#125;'</span>.format(key))</span><br><span class="line">        <span class="keyword">return</span> title</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">input_any_exit</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        input(<span class="string">"\r\nEnter any key to exit... "</span>)</span><br><span class="line">    <span class="keyword">finally</span>:</span><br><span class="line">        sys.exit(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">checkFile</span><span class="params">(file)</span>:</span></span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        <span class="keyword">if</span> os.path.isfile(file):</span><br><span class="line">            print(<span class="string">"&gt;&gt;&gt;获取'&#123;&#125;'文件成功"</span>.format(file))</span><br><span class="line">            <span class="keyword">return</span> file</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(<span class="string">"Error:获取'&#123;&#125;'文件失败,请将文件放在当前目录下"</span>.format(file))</span><br><span class="line">            input(<span class="string">"Enter any key to continue... "</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getCmdlist</span><span class="params">(file, keyword=<span class="string">'#'</span>)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    读取文件为str，然后使用split(keyword)进行分割得到list</span></span><br><span class="line"><span class="string">    keyword=‘#’，分割为不同的命令行回显</span></span><br><span class="line"><span class="string">    return: cmdlist</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;读取文件为字符串并按'&#123;&#125;'分割为列表"</span>.format(keyword))</span><br><span class="line">    <span class="keyword">with</span> open(file,<span class="string">"r"</span>) <span class="keyword">as</span> f:</span><br><span class="line">        log = f.read() <span class="comment">#type str</span></span><br><span class="line">        cmdlist = log.split(keyword)</span><br><span class="line">    <span class="keyword">return</span> cmdlist</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getCmd</span><span class="params">(cmdlist, keyword)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    通过keyord找到指定命令行的回显</span></span><br><span class="line"><span class="string">    show version: '9900 Ver'</span></span><br><span class="line"><span class="string">    return: cmd</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;从列表中获取包含'&#123;&#125;'的命令行回显信息"</span>.format(keyword))</span><br><span class="line">    <span class="keyword">for</span> cmd <span class="keyword">in</span> cmdlist:</span><br><span class="line">        <span class="keyword">if</span> keyword <span class="keyword">in</span> cmd:</span><br><span class="line">            <span class="keyword">for</span> r <span class="keyword">in</span> [<span class="string">r'--More--'</span>,<span class="string">r''</span>]:</span><br><span class="line">                cmd = re.sub(r,<span class="string">""</span>,cmd) <span class="comment"># 正则去换行符</span></span><br><span class="line">            <span class="keyword">return</span> cmd</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getCmdsplit_list</span><span class="params">(cmd, keyword)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    分割命令行回显信息</span></span><br><span class="line"><span class="string">    show version: 'ute(s)'</span></span><br><span class="line"><span class="string">    return: cmdsplit_list</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    print(<span class="string">"&gt;&gt;&gt;将指定命令行回显按'&#123;&#125;'分割为列表"</span>.format(keyword))</span><br><span class="line">    cmdstr_list = cmd.split(keyword)</span><br><span class="line">    <span class="keyword">return</span> cmdstr_list</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getVersion</span><span class="params">(cmd)</span>:</span></span><br><span class="line">    <span class="comment">#获取verison</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> cmd.split(<span class="string">'\n'</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'9900 Ver'</span> <span class="keyword">in</span> i :</span><br><span class="line">            <span class="keyword">return</span> i</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    print(<span class="string">"**** Welcome to use this tool! ****"</span>)</span><br><span class="line">    time_now = time.strftime(<span class="string">"%Y-%m-%d_%H-%M-%S"</span>, time.localtime())</span><br><span class="line">    filename =  <span class="string">"9900_"</span> + time_now + <span class="string">".xlsx"</span></span><br><span class="line">    workbook = xlsxwriter.Workbook(filename)</span><br><span class="line">    worksheet1 = workbook.add_worksheet()</span><br><span class="line">    f=checkFile(<span class="string">'showversion.txt'</span>)</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        x = <span class="number">0</span> <span class="comment">#行</span></span><br><span class="line">        y = <span class="number">0</span> <span class="comment">#列</span></span><br><span class="line">        cmdlist=getCmdlist(f)</span><br><span class="line">        <span class="comment">#获取show version</span></span><br><span class="line">        showversion = getCmd(cmdlist,<span class="string">'9900 Ver'</span>)</span><br><span class="line">        showversion_list = getCmdsplit_list(showversion,<span class="string">'ute(s)'</span>)</span><br><span class="line">        <span class="comment">#获取ver信息</span></span><br><span class="line">        version = getVersion(showversion)</span><br><span class="line">        print(version)</span><br><span class="line">        worksheet1.write(x, y, version)</span><br><span class="line">        <span class="comment">#写boardinfo标题栏</span></span><br><span class="line">        x += <span class="number">1</span></span><br><span class="line">        board_title= Board_info()</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> board_title.boardinfo_title():</span><br><span class="line">            worksheet1.write(x, y, i)</span><br><span class="line">            y += <span class="number">1</span></span><br><span class="line">        y = <span class="number">0</span></span><br><span class="line">        x += <span class="number">1</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(showversion_list)):</span><br><span class="line">            board= Board_info()</span><br><span class="line">            board.getBoardinfo(showversion_list[i])</span><br><span class="line">            print(board)</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> board.boardinfo_attrs():</span><br><span class="line">                worksheet1.write(x, y, i)</span><br><span class="line">                y += <span class="number">1</span></span><br><span class="line">            x += <span class="number">1</span></span><br><span class="line">            y = <span class="number">0</span></span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        print(e)</span><br><span class="line">    <span class="keyword">finally</span>:</span><br><span class="line">        workbook.close()</span><br><span class="line">        input_any_exit()</span><br></pre></td></tr></table></figure>
+            <div class="post-button text-center">
+              <a class="btn" href="/posts/b2fe6e5c.html" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
     </div>
@@ -746,7 +759,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/4c1d8079/">
+    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/4c1d8079.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Yang">
@@ -766,7 +779,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/posts/4c1d8079/" class="post-title-link" itemprop="url">python脚本:通过sftp获取远端设备指定目录文件</a>
+                <a href="/posts/4c1d8079.html" class="post-title-link" itemprop="url">python脚本-通过sftp获取远端设备指定目录文件</a>
               
             
           </h2>
@@ -808,7 +821,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-18 07:59:08" itemprop="dateModified" datetime="2019-02-18T07:59:08+08:00">2019-02-18</time>
+                <time title="修改时间：2019-03-03 21:28:58" itemprop="dateModified" datetime="2019-03-03T21:28:58+08:00">2019-03-03</time>
               
             
           </span>
@@ -867,13 +880,11 @@
 
       
         
-          <blockquote>
-<p>通过sftp获取远端设备指定目录文件到本地，需要远端设备开启ssh</p>
-</blockquote>
+          <p>通过sftp获取远端设备指定目录文件到本地，需要远端设备开启ssh</p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/posts/4c1d8079/" rel="contents">
+              <a class="btn" href="/posts/4c1d8079.html" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -933,7 +944,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/4ddc4922/">
+    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/4ddc4922.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Yang">
@@ -953,7 +964,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/posts/4ddc4922/" class="post-title-link" itemprop="url">python脚本:解析设备的cmdlog日志，提取时间信息和命令行</a>
+                <a href="/posts/4ddc4922.html" class="post-title-link" itemprop="url">python脚本-解析设备的cmdlog日志，提取时间信息和命令行</a>
               
             
           </h2>
@@ -995,7 +1006,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-26 22:59:17" itemprop="dateModified" datetime="2019-02-26T22:59:17+08:00">2019-02-26</time>
+                <time title="修改时间：2019-03-03 21:28:58" itemprop="dateModified" datetime="2019-03-03T21:28:58+08:00">2019-03-03</time>
               
             
           </span>
@@ -1054,13 +1065,11 @@
 
       
         
-          <blockquote>
-<p>解析设备的cmdlog日志，提取时间信息和命令行<br>处理前：<br><img src="/media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-07%20%E4%B8%8B%E5%8D%8811.30.17.png" alt="屏幕快照 2019-02-07 下午11.30.17"><br>处理后：<br><img src="/media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-07%20%E4%B8%8B%E5%8D%8811.25.07.png" alt="屏幕快照 2019-02-07 下午11.25.07"></p>
-</blockquote>
+          <p>解析设备的cmdlog日志，提取时间信息和命令行<br>处理前：<br><img src="/media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-07%20%E4%B8%8B%E5%8D%8811.30.17.png" alt="屏幕快照 2019-02-07 下午11.30.17"><br>处理后：<br><img src="/media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-07%20%E4%B8%8B%E5%8D%8811.25.07.png" alt="屏幕快照 2019-02-07 下午11.25.07"></p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/posts/4ddc4922/" rel="contents">
+              <a class="btn" href="/posts/4ddc4922.html" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1120,7 +1129,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/c6a9b354/">
+    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/c6a9b354.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Yang">
@@ -1140,7 +1149,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/posts/c6a9b354/" class="post-title-link" itemprop="url">报BUG是一门学问</a>
+                <a href="/posts/c6a9b354.html" class="post-title-link" itemprop="url">报BUG是一门学问</a>
               
             
           </h2>
@@ -1235,7 +1244,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/posts/c6a9b354/" rel="contents">
+              <a class="btn" href="/posts/c6a9b354.html" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1295,7 +1304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/fa88ee57/">
+    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/fa88ee57.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Yang">
@@ -1315,7 +1324,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/posts/fa88ee57/" class="post-title-link" itemprop="url">2018年总结</a>
+                <a href="/posts/fa88ee57.html" class="post-title-link" itemprop="url">2018年总结</a>
               
             
           </h2>
@@ -1420,7 +1429,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/posts/fa88ee57/" rel="contents">
+              <a class="btn" href="/posts/fa88ee57.html" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1480,7 +1489,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/aaafd623/">
+    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/aaafd623.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Yang">
@@ -1500,7 +1509,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/posts/aaafd623/" class="post-title-link" itemprop="url">【转载】提升产品质量-需求质量</a>
+                <a href="/posts/aaafd623.html" class="post-title-link" itemprop="url">【转载】提升产品质量-需求质量</a>
               
             
           </h2>
@@ -1613,7 +1622,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/posts/aaafd623/" rel="contents">
+              <a class="btn" href="/posts/aaafd623.html" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1673,7 +1682,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/a8e44310/">
+    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/a8e44310.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Yang">
@@ -1693,7 +1702,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/posts/a8e44310/" class="post-title-link" itemprop="url">python小程序</a>
+                <a href="/posts/a8e44310.html" class="post-title-link" itemprop="url">python小程序</a>
               
             
           </h2>
@@ -1798,7 +1807,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/posts/a8e44310/" rel="contents">
+              <a class="btn" href="/posts/a8e44310.html" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1858,7 +1867,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/74c7bf03/">
+    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/74c7bf03.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Yang">
@@ -1878,7 +1887,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/posts/74c7bf03/" class="post-title-link" itemprop="url">做一名优秀的软件测试工程师</a>
+                <a href="/posts/74c7bf03.html" class="post-title-link" itemprop="url">做一名优秀的软件测试工程师</a>
               
             
           </h2>
@@ -1983,7 +1992,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/posts/74c7bf03/" rel="contents">
+              <a class="btn" href="/posts/74c7bf03.html" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -2043,7 +2052,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/9d87f16a/">
+    <link itemprop="mainEntityOfPage" href="https://sniu0320.com/posts/9d87f16a.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Yang">
@@ -2063,7 +2072,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/posts/9d87f16a/" class="post-title-link" itemprop="url">linux笔记</a>
+                <a href="/posts/9d87f16a.html" class="post-title-link" itemprop="url">linux笔记</a>
               
             
           </h2>
@@ -2170,7 +2179,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/posts/9d87f16a/" rel="contents">
+              <a class="btn" href="/posts/9d87f16a.html" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
